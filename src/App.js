@@ -1,4 +1,6 @@
 import "./App.css";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import Video from "./Components/Video";
 import Test from "./Test";
 
@@ -16,10 +18,12 @@ function App() {
   // };
 
   return (
-    <div className="App">
-      This is the App Page
-      {window.location.pathname.split("/").includes("video") && <Video />}
-    </div>
+    <HelmetProvider>
+      <div className="App">
+        This is the App Page
+        {window.location.pathname.split("/").includes("video") && <Video />}
+      </div>
+    </HelmetProvider>
   );
 }
 

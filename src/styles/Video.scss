@@ -1,16 +1,20 @@
 .video {
-  .player-container {
-    width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //   .player-container {
+  //     width: 60vw;
 
-    .player-wrapper {
-      position: relative;
-      padding-top: 56.25%;
-      width: 100%;
-    }
-    .player {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
   }
+  .player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  //   }
 }
