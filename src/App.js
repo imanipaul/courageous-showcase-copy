@@ -1,13 +1,16 @@
 import "./App.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 
-import Video from "./Components/Video";
+import Header from "./components/Header";
+
+import Video from "./components/Video";
 
 function App() {
   return (
     <HelmetProvider>
       <div className="App">
-        This is the App Page
+        <Header />
+
         {window.location.pathname.split("/").includes("video") && <Video />}
       </div>
     </HelmetProvider>
