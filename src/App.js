@@ -1,8 +1,8 @@
-import './App.css';
-import Test from './Test'
+import "./App.css";
+import Video from "./Components/Video";
+import Test from "./Test";
 
 function App() {
-
   // const pickArticle = () => {
   //   if (
   //     window.location.pathname.split("/").includes("InvestmentGradeCashmere")
@@ -17,9 +17,8 @@ function App() {
 
   return (
     <div className="App">
-This is the App Page
-    {window.location.pathname.split("/").includes('test') && <Test />}
-     
+      This is the App Page
+      {window.location.pathname.split("/").includes("video") && <Video />}
     </div>
   );
 }
