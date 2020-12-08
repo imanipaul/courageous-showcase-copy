@@ -1,16 +1,28 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
 header {
-  border: 1px solid red;
+  //   border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 24px 0px;
+  position: relative;
+  //   overflow-x: hidden;
+
+  @media screen and (max-width: $video-break) {
+    padding: 16px 0px;
+  }
 
   p {
     margin: 0px;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 24px;
+    font-family: "Trade Gothic Bold Condensed";
+    margin-left: 15px;
+    align-self: flex-end; //to account for baseline offset of font
   }
 
   .links {
@@ -21,6 +33,20 @@ header {
     #instagram {
       width: 26px;
       height: auto;
+    }
+
+    .desktop {
+      display: inline;
+      @media screen and (max-width: $video-break) {
+        display: none;
+      }
+    }
+
+    .mobile {
+      display: none;
+      @media screen and (max-width: $video-break) {
+        display: block;
+      }
     }
   }
 }
