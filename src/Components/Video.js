@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Vimeo from "@vimeo/player";
 import "../styles/Video.scss";
+import Footer from "./Footer";
 
 const VimeoPlayer = require("@vimeo/player");
 
@@ -39,6 +40,7 @@ function Video(props) {
             autoPlay
             muted
             loop
+            playsInline
           />
           <button
             onClick={() => {
@@ -87,6 +89,7 @@ function Video(props) {
           <p>{props.data.quote}</p>
         </div>
       </div>
+      <Footer data={props.allData} currentPage={props.currentPage} />
     </section>
   );
 }

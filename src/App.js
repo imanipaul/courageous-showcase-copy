@@ -21,7 +21,11 @@ function App() {
         {currentPage === "homepage" ? (
           <Homepage setCurrentPage={setCurrentPage} data={data} />
         ) : (
-          <Video data={data[currentPage]} />
+          <Video
+            data={data[currentPage]}
+            allData={data}
+            currentPage={currentPage}
+          />
         )}
       </div>
     </HelmetProvider>
