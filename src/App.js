@@ -23,12 +23,6 @@ function App() {
         ) : (
           <Video data={data[currentPage]} />
         )}
-
-        {/* {window.location.pathname === "/" && <Homepage />}
-
-        {window.location.pathname.split("/").includes("video") && (
-          <Video overlay={familyOverlay} data={data[1]} />
-        )} */}
       </div>
     </HelmetProvider>
   );
