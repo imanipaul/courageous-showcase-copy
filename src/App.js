@@ -11,18 +11,24 @@ import familyOverlay from "./assets/images/family-overlay.jpg";
 import { useState } from "react";
 
 function App() {
-  const [showVideo, setShowVideo] = useState(false);
+  const [currentPage, setCurrentPage] = useState("homepage");
 
   return (
     <HelmetProvider>
       <div className="App">
-        <Header />
+        <Header setCurrentPage={setCurrentPage} />
 
-        {window.location.pathname === "/" && <Homepage />}
+        {currentPage === "homepage" ? (
+          <Homepage setCurrentPage={setCurrentPage} />
+        ) : (
+          <Video data={data[currentPage]} />
+        )}
+
+        {/* {window.location.pathname === "/" && <Homepage />}
 
         {window.location.pathname.split("/").includes("video") && (
           <Video overlay={familyOverlay} data={data[1]} />
-        )}
+        )} */}
       </div>
     </HelmetProvider>
   );

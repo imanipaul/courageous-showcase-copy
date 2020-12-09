@@ -7,12 +7,14 @@ import hamburger from "../assets/images/HAMBURGER.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header(props) {
   const [burgerVisible, setBurgerVisible] = useState(false);
 
   return (
     <header>
-      <p>Courageous Showcase</p>
+      <p onClick={() => props.setCurrentPage("homepage")}>
+        Courageous Showcase
+      </p>
       <HamburgerMenu visible={burgerVisible} setVisible={setBurgerVisible} />
       <div className="links">
         <a href="#" className="desktop">

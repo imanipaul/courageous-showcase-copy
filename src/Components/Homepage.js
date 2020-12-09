@@ -1,10 +1,8 @@
-export default function Homepage() {
+export default function Homepage(props) {
   return (
     <section className="homepage">
       This is the home page
-      <button onClick={() => (window.location.pathname = "/video")}>
-        Video Page
-      </button>
+      <button onClick={() => props.setCurrentPage(1)}>Video Page</button>
     </section>
   );
 }
