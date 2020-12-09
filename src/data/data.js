@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     theme: "Family",
     video: "https://vimeo.com/434733209",
@@ -7,7 +7,8 @@ const data = [
     title: "How One Dad Started a Movement to Celebrate Black Fatherhood",
     description:
       "The Dad Gang began in 2016 as an Instagram account designed to put positive images of Black fatherhood out into the world. Today, the Dad Gang is an entire social community made up of Black dads who support and celebrate each other. The Dad Gang reminds us to love, cherish and protect these men who want nothing more than to be there for their kids.",
-    quote: "",
+    quote:
+      "Having a child and becoming a father, it's a major life change... we all need friends or like-minded individuals when we're going through these changes.",
   },
   {
     theme: "Equality",
@@ -17,7 +18,8 @@ const data = [
     title: "You Can't Pause Progress",
     description:
       "Secret is proud to support women who are “all strength, no sweat” – those who boldly fight for progress not only for themselves but for all women, without sweating the obstacles in their path. Secret Deodorant is partnering with Girls Leading Girls to keep young female athletes across America stay physically active and mentally motivated during these difficult times.",
-    quote: "",
+    quote:
+      "It hasn't been easy, and we all face different challenges... but we're taking this time to practice new skills, learning how to lead and to lift each other up.",
   },
   {
     theme: "Beauty",
@@ -27,7 +29,8 @@ const data = [
     title: "Inspired By Beauty",
     description:
       "Italian jewelry designer Roberto Coin has spent his life searching for beauty. A self-styled ‘beauty explorer,’ Roberto asserts that the most important experiences of beauty cannot be seen or even touched, they must be felt with the heart. That sentiment imbues every piece of jewelry he creates.",
-    quote: "",
+    quote:
+      "It was a tremendous risk, but I was never afraid... the most beautiful things in life cannot be seen – cannot be touched – they must be felt with your heart.",
   },
   {
     theme: "Innovation",

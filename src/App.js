@@ -4,6 +4,8 @@ import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/Header";
 import Video from "./components/Video";
 
+import { data } from "./data/data";
+
 import familyOverlay from "./assets/images/family-overlay.jpg";
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
         <Header />
 
         {window.location.pathname.split("/").includes("video") && (
-          <Video overlay={familyOverlay} />
+          <Video overlay={familyOverlay} data={data[0]} />
         )}
       </div>
     </HelmetProvider>

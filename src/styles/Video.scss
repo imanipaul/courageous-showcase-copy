@@ -1,8 +1,15 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
 .video {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: $video-mobile-max) {
+    align-items: flex-start;
+  }
   //   .player-container {
   //     width: 60vw;
 
@@ -43,6 +50,10 @@
         text-align: center;
         line-height: 16px;
         padding-top: 5px; //to fix font baseline issue
+
+        @media screen and (max-width: $mobile-small) {
+          width: 101px;
+        }
       }
     }
 
@@ -51,6 +62,179 @@
       top: 0;
       left: 0;
       border: none;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 1035px;
+
+    @media screen and (max-width: $video-break - 1) {
+      max-width: 612px;
+    }
+
+    @media screen and (max-width: $video-mobile-max) {
+      max-width: none;
+      width: auto;
+      // width: 85%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+
+      @media screen and (max-width: $video-mobile-max) {
+        margin-left: 16px;
+        margin-right: 10%;
+      }
+
+      @media screen and (max-width: $mobile-small) {
+        // width: ;
+        margin-right: 16px;
+      }
+
+      .brand {
+        font-family: "Lato Light";
+        font-size: 20px;
+        color: white;
+        letter-spacing: 0.53px;
+        line-height: 24px;
+        text-transform: uppercase;
+        align-self: flex-start;
+        margin-top: 24px;
+        margin-bottom: 8px;
+
+        @media screen and (max-width: $video-mobile-max) {
+          margin-bottom: 4px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      button {
+        width: 133px;
+        height: 48px;
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Trade Gothic Bold Condensed";
+        font-size: 16px;
+        align-self: flex-start;
+        border: none;
+        padding-top: 5px; //to fix font baseline issue
+        @media screen and (max-width: $mobile-small) {
+          width: 100%;
+          height: 36px;
+        }
+      }
+
+      .descriptions {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        @media screen and (max-width: $video-mobile-max) {
+          flex-direction: column;
+          // max-width: 540px;
+          align-self: flex-start;
+        }
+
+        .title {
+          font-family: "Lato Black";
+          font-size: 36px;
+          color: white;
+          letter-spacing: 0.8px;
+          line-height: 46px;
+          margin: 0px;
+          margin-bottom: 24px;
+          max-width: 500px;
+
+          @media screen and (max-width: $video-break - 1) {
+            font-size: 24px;
+            letter-spacing: 0.53px;
+            line-height: 30px;
+            max-width: 242px;
+          }
+
+          @media screen and (max-width: $video-mobile-max) {
+            width: 100%;
+            margin: 0px;
+            max-width: none;
+            margin-top: 4px;
+            margin-bottom: 12px;
+          }
+        }
+
+        .right {
+          width: 500px;
+          font-family: "Lato Light";
+          font-size: 18px;
+          color: white;
+          letter-spacing: 0.4px;
+          line-height: 24px;
+          margin-left: auto;
+          @media screen and (max-width: $video-break - 1) {
+            font-size: 16px;
+            letter-spacing: 0.36px;
+            line-height: 24px;
+            max-width: 292px;
+          }
+
+          @media screen and (max-width: $video-mobile-max) {
+            width: 100%;
+            margin: 0px;
+            max-width: none;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+
+    .quote {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      width: 822px;
+      min-height: 188px;
+      border: 1px solid white;
+      align-self: center;
+
+      @media screen and (max-width: $video-break - 1) {
+        margin-top: 40px;
+        width: 483px;
+        min-height: 296px;
+      }
+
+      @media screen and (max-width: $video-mobile-max) {
+        // width: 92%;
+        width: auto;
+        min-height: 224px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      p {
+        font-family: "Trade Gothic Bold Condensed";
+        font-size: 36px;
+        letter-spacing: -0.4px;
+        color: white;
+        text-align: center;
+        line-height: 36px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        margin: 40px 64px;
+
+        @media screen and (max-width: $video-mobile-max) {
+          margin: 40px 40px;
+        }
+
+        @media screen and (max-width: $mobile-small) {
+          margin: 40px 16px;
+        }
+      }
     }
   }
   //   }
