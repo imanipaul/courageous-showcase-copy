@@ -48,9 +48,6 @@ function Video(props) {
               console.log("video ref is", videoRef.current);
               let player = new Vimeo(videoRef.current);
               player.play();
-              // videoRef.current.play();
-              // videoRef.current.style.zIndex = 100;
-              // video
             }}
           >
             Play Now
@@ -59,12 +56,14 @@ function Video(props) {
         <iframe
           ref={videoRef}
           className="player"
-          src="https://player.vimeo.com/video/376857392?color=b89544&title=0&byline=0&portrait=0"
+          src={`https://player.vimeo.com/video/${props.data.video}?color=b89544&title=0&byline=0&portrait=0`}
           width="100%"
           height="100%"
           allow="autoplay; fullscreen"
           allowFullScreen
         ></iframe>
+
+        {/* <iframe src="https://player.vimeo.com/video/434733209?color=b89544&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> */}
       </div>
       <div className="content">
         <div className="info">

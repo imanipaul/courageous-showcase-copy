@@ -15,7 +15,7 @@ function App() {
         <Header />
 
         {window.location.pathname.split("/").includes("video") && (
-          <Video overlay={familyOverlay} data={data[0]} />
+          <Video overlay={familyOverlay} data={data[1]} />
         )}
       </div>
     </HelmetProvider>

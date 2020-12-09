@@ -25,7 +25,7 @@ import usaaPoster from "../assets/images/2020-12-07-COU-VALUES-USAA.jpg";
 export const data = [
   {
     theme: "Family",
-    video: "https://vimeo.com/434733209",
+    video: "434733209",
     loop: targetLoop,
     poster: targetPoster,
     brand: "Target",
@@ -37,7 +37,7 @@ export const data = [
   },
   {
     theme: "Equality",
-    video: "https://vimeo.com/412796207",
+    video: "412796207",
     loop: pgLoop,
     poster: pgPoster,
     brand: "P&G/Secret",
@@ -49,7 +49,7 @@ export const data = [
   },
   {
     theme: "Beauty",
-    video: "https://vimeo.com/376857392",
+    video: "376857392",
     loop: robertoLoop,
     poster: robertoPoster,
     brand: "Roberto Coin",
@@ -61,7 +61,7 @@ export const data = [
   },
   {
     theme: "Innovation",
-    video: "https://vimeo.com/434734374",
+    video: "434734374",
     loop: pfizerLoop,
 
     poster: pfizerPoster,
@@ -73,7 +73,7 @@ export const data = [
   },
   {
     theme: "Perseverance",
-    video: "https://vimeo.com/430464732",
+    video: "430464732",
     loop: charclesschwabLoop,
 
     poster: charlesschwabPoster,
@@ -85,7 +85,7 @@ export const data = [
   },
   {
     theme: "Dedication",
-    video: "https://vimeo.com/442091766",
+    video: "442091766",
     loop: invescoLoop,
 
     poster: invescoPoster,
@@ -97,7 +97,7 @@ export const data = [
   },
   {
     theme: "Stewardship",
-    video: "https://vimeo.com/383798189",
+    video: "383798189",
     loop: jhLoop,
 
     poster: jhPoster,
@@ -109,7 +109,7 @@ export const data = [
   },
   {
     theme: "Service",
-    video: "https://vimeo.com/470720637",
+    video: "470720637",
     loop: usaaLoop,
 
     poster: usaaPoster,
@@ -121,7 +121,7 @@ export const data = [
   },
   {
     theme: "Mobility",
-    video: "https://vimeo.com/404740466",
+    video: "404740466",
     loop: narLoop,
 
     poster: narPoster,
@@ -133,7 +133,7 @@ export const data = [
   },
   {
     theme: "Caregiving",
-    video: "https://vimeo.com/441078391",
+    video: "441078391",
     loop: sleepnumberLoop,
 
     poster: sleepnumberPoster,
@@ -145,7 +145,7 @@ export const data = [
   },
   {
     theme: "Progress",
-    video: "https://vimeo.com/487358399",
+    video: "487358399",
     loop: attLoop,
 
     poster: attPoster,
@@ -157,7 +157,7 @@ export const data = [
   },
   {
     theme: "Fun - Please update value",
-    video: "https://vimeo.com/453763150",
+    video: "453763150",
     loop: attLoop,
     poster: attPoster,
     brand: "Lego",
