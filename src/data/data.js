@@ -1,8 +1,33 @@
+import attLoop from "../assets/videos/2020-12-07-COU-VALUES-ATT.mp4";
+import charclesschwabLoop from "../assets/videos/2020-12-07-COU-VALUES-CHARLES-SCHWAB.mp4";
+import invescoLoop from "../assets/videos/2020-12-07-COU-VALUES-INVESCO.mp4";
+import jhLoop from "../assets/videos/2020-12-07-COU-VALUES-JOHN-HANCOCK.mp4";
+import narLoop from "../assets/videos/2020-12-07-COU-VALUES-NAR.mp4";
+import pfizerLoop from "../assets/videos/2020-12-07-COU-VALUES-PFIZER.mp4";
+import robertoLoop from "../assets/videos/2020-12-07-COU-VALUES-ROBERTO.mp4";
+import sleepnumberLoop from "../assets/videos/2020-12-07-COU-VALUES-SLEEP-NUMBER.mp4";
+import targetLoop from "../assets/videos/2020-12-07-COU-VALUES-TARGET.mp4";
+import usaaLoop from "../assets/videos/2020-12-07-COU-VALUES-USAA.mp4";
+import pgLoop from "../assets/videos/2020-12-08-COU-VALUES-PG.mp4";
+
+import attPoster from "../assets/images/2020-12-07-COU-VALUES-ATT.jpg";
+import charlesschwabPoster from "../assets/images/2020-12-07-COU-VALUES-CHARLES-SCHWAB.jpg";
+import invescoPoster from "../assets/images/2020-12-07-COU-VALUES-INVESCO.jpg";
+import jhPoster from "../assets/images/2020-12-07-COU-VALUES-JOHN-HANCOCK.jpg";
+import narPoster from "../assets/images/2020-12-07-COU-VALUES-NAR.jpg";
+import pfizerPoster from "../assets/images/2020-12-07-COU-VALUES-PFIZER.jpg";
+import pgPoster from "../assets/images/2020-12-07-COU-VALUES-PG.jpg";
+import robertoPoster from "../assets/images/2020-12-07-COU-VALUES-ROBERTO.jpg";
+import sleepnumberPoster from "../assets/images/2020-12-07-COU-VALUES-SLEEPNUMBER.jpg";
+import targetPoster from "../assets/images/2020-12-07-COU-VALUES-TARGET.jpg";
+import usaaPoster from "../assets/images/2020-12-07-COU-VALUES-USAA.jpg";
+
 export const data = [
   {
     theme: "Family",
     video: "https://vimeo.com/434733209",
-    poster: "",
+    loop: targetLoop,
+    poster: targetPoster,
     brand: "Target",
     title: "How One Dad Started a Movement to Celebrate Black Fatherhood",
     description:
@@ -13,7 +38,8 @@ export const data = [
   {
     theme: "Equality",
     video: "https://vimeo.com/412796207",
-    poster: "",
+    loop: pgLoop,
+    poster: pgPoster,
     brand: "P&G/Secret",
     title: "You Can't Pause Progress",
     description:
@@ -24,7 +50,8 @@ export const data = [
   {
     theme: "Beauty",
     video: "https://vimeo.com/376857392",
-    poster: "",
+    loop: robertoLoop,
+    poster: robertoPoster,
     brand: "Roberto Coin",
     title: "Inspired By Beauty",
     description:
@@ -35,7 +62,9 @@ export const data = [
   {
     theme: "Innovation",
     video: "https://vimeo.com/434734374",
-    poster: "",
+    loop: pfizerLoop,
+
+    poster: pfizerPoster,
     brand: "Pfizer",
     title: "Relentless Pursuit: No Stone Left Unturned",
     description:
@@ -45,7 +74,9 @@ export const data = [
   {
     theme: "Perseverance",
     video: "https://vimeo.com/430464732",
-    poster: "",
+    loop: charclesschwabLoop,
+
+    poster: charlesschwabPoster,
     brand: "Charles Schwab",
     title: "Breakaway",
     description:
@@ -55,7 +86,9 @@ export const data = [
   {
     theme: "Dedication",
     video: "https://vimeo.com/442091766",
-    poster: "",
+    loop: invescoLoop,
+
+    poster: invescoPoster,
     brand: "Invesco",
     title: "Basketball is Back",
     description:
@@ -65,7 +98,9 @@ export const data = [
   {
     theme: "Stewardship",
     video: "https://vimeo.com/383798189",
-    poster: "",
+    loop: jhLoop,
+
+    poster: jhPoster,
     brand: "John Hancock",
     title: "Who's Saving the Maah Daah Hey?",
     description:
@@ -75,7 +110,9 @@ export const data = [
   {
     theme: "Service",
     video: "https://vimeo.com/470720637",
-    poster: "",
+    loop: usaaLoop,
+
+    poster: usaaPoster,
     brand: "USAA",
     title: "Gold Star Families - Town name begins with 'E'",
     description:
@@ -85,7 +122,9 @@ export const data = [
   {
     theme: "Mobility",
     video: "https://vimeo.com/404740466",
-    poster: "",
+    loop: narLoop,
+
+    poster: narPoster,
     brand: "NAR",
     title: "Home is Where You Park It",
     description:
@@ -95,7 +134,9 @@ export const data = [
   {
     theme: "Caregiving",
     video: "https://vimeo.com/441078391",
-    poster: "",
+    loop: sleepnumberLoop,
+
+    poster: sleepnumberPoster,
     brand: "Sleep Number",
     title: "A North Country Midwife",
     description:
@@ -105,7 +146,9 @@ export const data = [
   {
     theme: "Progress",
     video: "https://vimeo.com/487358399",
-    poster: "",
+    loop: attLoop,
+
+    poster: attPoster,
     brand: "AT&T",
     title: "Forces of Change: The Black Scientific Rennaissance",
     description:
@@ -115,47 +158,12 @@ export const data = [
   {
     theme: "Fun - Please update value",
     video: "https://vimeo.com/453763150",
-    poster: "",
+    loop: attLoop,
+    poster: attPoster,
     brand: "Lego",
     title: "Movie Stunts/Lego Cars",
     description:
       "LEGO Technic’s building system of beams, gear wheels, and axles is inspired by the real world. Who better to size up the realistic, working features of Technic than someone with a close, intimate, life-or-death relationship with motor vehicles? That’s where our veteran stunt person, Rick Fike, comes in!",
-    quote: "",
-  },
-  {
-    theme: "",
-    video: "",
-    poster: "",
-    brand: "",
-    title: "",
-    description: "",
-    quote: "",
-  },
-  {
-    theme: "",
-    video: "",
-    poster: "",
-    brand: "",
-    title: "",
-    description: "",
-    quote: "",
-  },
-  {
-    theme: "",
-    video: "",
-    poster: "",
-    brand: "",
-    title: "",
-    description: "",
-    quote: "",
-  },
-  {
-    theme: "",
-    video: "",
-    poster: "",
-    brand: "",
-    title: "",
-    description: "",
     quote: "",
   },
 ];

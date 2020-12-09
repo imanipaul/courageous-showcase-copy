@@ -1,11 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import Vimeo from "@vimeo/player";
 import "../styles/Video.scss";
+
+const VimeoPlayer = require("@vimeo/player");
 
 function Video(props) {
   const [buttonPlacement, setButtonPlacement] = useState(
     window.innerWidth > 648 ? "desktop" : "mobile"
   );
+
+  const loopRef = useRef(null);
+  const videoRef = useRef(null);
 
   function handleResize() {
     console.log("resizing!");
@@ -26,10 +32,32 @@ function Video(props) {
       </Helmet>
       <div className="player-wrapper">
         <div className="overlay">
-          <img src={props.overlay} alt="overlay" />
-          <button>Play Now</button>
+          <video
+            ref={loopRef}
+            src={props.data.loop}
+            poster={props.data.poster}
+            autoPlay
+            muted
+            loop
+          />
+          <button
+            onClick={() => {
+              loopRef.current.style.zIndex = -100;
+              loopRef.current.pause();
+              videoRef.current.style.zIndex = 100;
+              console.log("video ref is", videoRef.current);
+              let player = new Vimeo(videoRef.current);
+              player.play();
+              // videoRef.current.play();
+              // videoRef.current.style.zIndex = 100;
+              // video
+            }}
+          >
+            Play Now
+          </button>
         </div>
         <iframe
+          ref={videoRef}
           className="player"
           src="https://player.vimeo.com/video/376857392?color=b89544&title=0&byline=0&portrait=0"
           width="100%"
