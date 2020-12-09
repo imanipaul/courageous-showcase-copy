@@ -2,18 +2,19 @@ import "./App.css";
 import { HelmetProvider } from "react-helmet-async";
 
 import Header from "./components/Header";
-
 import Video from "./components/Video";
-import HamburgerMenu from "./components/HamburgerMenu";
+
+import familyOverlay from "./assets/images/family-overlay.jpg";
 
 function App() {
   return (
     <HelmetProvider>
       <div className="App">
         <Header />
-        {/* <HamburgerMenu /> */}
 
-        {window.location.pathname.split("/").includes("video") && <Video />}
+        {window.location.pathname.split("/").includes("video") && (
+          <Video overlay={familyOverlay} />
+        )}
       </div>
     </HelmetProvider>
   );
