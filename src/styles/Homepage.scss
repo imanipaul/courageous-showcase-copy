@@ -1,0 +1,340 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
+.homepage {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 64px;
+
+    @media screen and (max-width: $homepage-title-break) {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-family: "Trade Gothic Bold Condensed";
+      font-size: 13.333vw;
+      color: white;
+      letter-spacing: -12.94px;
+      line-height: 200px;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 16px;
+
+      @media screen and (min-width: 1500px) {
+        margin-top: 0.5%;
+      }
+      //   margin-top: 20px; //to account for font baseline issue
+      @media screen and (min-width: 1800px) {
+        font-size: 240px;
+      }
+
+      @media screen and (max-width: 1440px) {
+        font-size: 180px;
+        letter-spacing: -9.71px;
+        line-height: 146.26px;
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 160px;
+        letter-spacing: -8.63px;
+        line-height: 21vw;
+        font-size: 21vw;
+      }
+      @media screen and (max-width: $mobile-small) {
+        font-size: 80px;
+        letter-spacing: -4.31px;
+        line-height: 80px;
+      }
+    }
+
+    p {
+      font-family: "Lato Light";
+      font-size: 18px;
+      color: white;
+      letter-spacing: 0.4px;
+      line-height: 24px;
+      max-width: 718px;
+      width: 39vw;
+      padding: 0px;
+      margin: 0px;
+      margin-left: auto;
+      text-align: left;
+
+      @media screen and (max-width: $homepage-title-break) {
+        margin: 0px;
+        max-width: none;
+        width: 95%;
+        margin-left: 16px;
+        margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        font-size: 16px;
+        letter-spacing: 0.36px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .grid-container {
+    padding: 0px 12px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    .value-grid {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: repeat(3, minmax(455px, 1fr));
+      grid-template-rows: repeat(7, minmax(304px, 1fr));
+      row-gap: 20px;
+
+      @media screen and (max-width: $homepage-laptop) {
+        grid-template-columns: repeat(2, minmax(352px, 1fr));
+        grid-template-rows: repeat(9, minmax(246px, 1fr));
+
+        column-gap: 32px;
+        row-gap: 40px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        row-gap: 40px;
+      }
+
+      .square {
+        video {
+          width: 100%;
+        }
+
+        &.s1 {
+          grid-column: 1 / span 2;
+          grid-row: 1 / span 2;
+          margin-right: 16px;
+          @media screen and (max-width: $homepage-laptop) {
+            // grid-column: 1 /span 2;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-row: 1;
+            grid-column: 1;
+          }
+        }
+
+        &.s2 {
+          margin-left: 16px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 1;
+            grid-row: 3;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 2;
+          }
+        }
+        &.s3 {
+          margin-left: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 2;
+            grid-row: 3;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 3;
+          }
+
+          //   margin-bottom: 20px;
+        }
+
+        &.s4 {
+          margin-right: 16px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 1;
+            grid-row: 4;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 4;
+          }
+
+          //   margin-top: 20px;
+        }
+        &.s5 {
+          grid-column: 2 / span 2;
+          grid-row: 3 / span 2;
+          margin-left: 16px;
+          //   margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 2;
+            grid-row: 4;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 5;
+          }
+        }
+        &.s6 {
+          margin-right: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 1 / span 2;
+            grid-row: 5 / span 2;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 6;
+          }
+        }
+        &.s7 {
+          margin-right: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 1;
+            grid-row: 7;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 7;
+          }
+        }
+        &.s8 {
+          margin-left: 16px;
+          margin-right: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 2;
+            grid-row: 7;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 8;
+          }
+        }
+        &.s9 {
+          margin-left: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 1;
+            grid-row: 8;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 9;
+          }
+        }
+        &.s10 {
+          grid-column: 1 / span 2;
+          grid-row: 6 / span 2;
+          margin-right: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 2;
+            grid-row: 8;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 10;
+          }
+        }
+        &.s11 {
+          margin-left: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 1;
+            grid-row: 9;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 11;
+          }
+        }
+        &.s12 {
+          margin-left: 16px;
+          margin-top: 20px;
+          @media screen and (max-width: $homepage-laptop) {
+            grid-column: 2;
+            grid-row: 9;
+            margin: 0px;
+          }
+          @media screen and (max-width: $tablet) {
+            grid-column: 1;
+            grid-row: 12;
+          }
+        }
+
+        &.s2,
+        &.s3,
+        &.s4,
+        &.s6,
+        &.s7,
+        &.s8,
+        &.s9,
+        &.s11,
+        &.s12 {
+          video {
+            max-width: 568px;
+            width: 31vw;
+
+            @media screen and (max-width: $homepage-laptop) {
+              width: 100%;
+              max-width: none;
+            }
+          }
+        }
+
+        .video-info {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          p {
+            margin: 0px;
+            margin-top: 8px;
+          }
+
+          .title,
+          .brand {
+            font-size: 14px;
+            color: white;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+
+            @media screen and (max-width: $tablet) {
+              font-size: 16px;
+              letter-spacing: 0.25px;
+            }
+          }
+
+          .title {
+            text-align: left;
+          }
+
+          .brand {
+            font-family: "Lato Light";
+            text-transform: uppercase;
+            text-align: right;
+            @media screen and (max-width: $tablet) {
+              letter-spacing: 1.07px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

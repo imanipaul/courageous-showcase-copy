@@ -19,7 +19,7 @@ function App() {
         <Header setCurrentPage={setCurrentPage} />
 
         {currentPage === "homepage" ? (
-          <Homepage setCurrentPage={setCurrentPage} />
+          <Homepage setCurrentPage={setCurrentPage} data={data} />
         ) : (
           <Video data={data[currentPage]} />
         )}
