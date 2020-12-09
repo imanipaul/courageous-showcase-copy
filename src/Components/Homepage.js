@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import "../styles/Homepage.scss";
 
 export default function Homepage(props) {
   return (
     <section className="homepage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Courageous Showcase</title>
+      </Helmet>
       <div className="header">
         <h1>2020 Values</h1>
         <p>
