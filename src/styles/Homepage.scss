@@ -4,45 +4,39 @@
 .homepage {
   .header {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     margin-top: 64px;
 
-    @media screen and (max-width: $homepage-title-break) {
-      flex-direction: column;
+    @media screen and (max-width: $tablet) {
+      align-items: flex-start;
+      margin-top: 10px;
     }
 
     h1 {
       font-family: "Trade Gothic Bold Condensed";
-      font-size: 13.333vw;
+      font-size: 180px;
       color: white;
-      letter-spacing: -12.94px;
-      line-height: 200px;
+      letter-spacing: -9.71px;
       text-transform: uppercase;
       margin: 0px;
       padding: 0px;
-      margin-left: 16px;
 
-      @media screen and (min-width: 1500px) {
-        margin-top: 0.5%;
-      }
-      //   margin-top: 20px; //to account for font baseline issue
-      @media screen and (min-width: 1800px) {
-        font-size: 240px;
-      }
-
-      @media screen and (max-width: 1440px) {
-        font-size: 180px;
-        letter-spacing: -9.71px;
-        line-height: 146.26px;
-      }
+      // @media screen and (max-width: 1440px) {
+      //   font-size: 180px;
+      //   letter-spacing: -9.71px;
+      //   line-height: 146.26px;
+      // }
       @media screen and (max-width: $tablet) {
-        font-size: 160px;
+        // font-size: 160px;
         letter-spacing: -8.63px;
-        line-height: 21vw;
+        // line-height: 21vw;
         font-size: 21vw;
+        text-align: left;
+        margin-left: 16px;
+        // letter-spacing: 0.0vw;
       }
-      @media screen and (max-width: $mobile-small) {
+      @media screen and (max-width: 425px) {
         font-size: 80px;
         letter-spacing: -4.31px;
         line-height: 80px;
@@ -55,25 +49,39 @@
       color: white;
       letter-spacing: 0.4px;
       line-height: 24px;
-      max-width: 718px;
-      width: 39vw;
+      // max-width: 718px;
+      width: 1116px;
       padding: 0px;
       margin: 0px;
-      margin-left: auto;
-      text-align: left;
+      margin-bottom: 64px;
+      margin-top: -30px;
+      // margin-left: auto;
+      text-align: center;
+
+      // @media screen and (max-width: 1439px) {
+
+      // }
 
       @media screen and (max-width: $homepage-title-break) {
-        margin: 0px;
+        // margin: 0px;
         max-width: none;
-        width: 95%;
-        margin-left: 16px;
+        // width: 95%;
         margin-bottom: 40px;
       }
 
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding: 0px 30px;
+        box-sizing: border-box;
+      }
+
       @media screen and (max-width: $tablet) {
+        text-align: left;
         font-size: 16px;
         letter-spacing: 0.36px;
         line-height: 24px;
+        padding: 0px 16px;
+        margin-top: -20px;
       }
     }
   }
@@ -107,6 +115,7 @@
       .square {
         position: relative;
         pointer-events: none;
+        cursor: default;
 
         & > * {
           pointer-events: auto;
@@ -346,7 +355,7 @@
             font-family: "Lato Regular";
 
             @media screen and (max-width: $tablet) {
-              max-width: 224px;
+              max-width: 60vw;
             }
           }
 

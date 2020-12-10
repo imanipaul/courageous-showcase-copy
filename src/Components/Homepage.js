@@ -12,11 +12,12 @@ export default function Homepage(props) {
       <div className="header">
         <h1>2020 Values</h1>
         <p>
-          Torquatos nostros? quos dolores et expedita distinctio nam libero
-          tempore, cum a sapiente delectus, ut ad modum, quaeso, interpretaris?
-          sicine eos et fortibus viris commemorandis eorumque factis non possim
-          accommodare torquatos nostros? quos tu tam egregios viros censes
-          tantas res gessisse sine dubio praeclara sunt.
+          Time and again, 2020 has challenged us to be more agile in our
+          approach to telling brands' stories, prioritizing safety without
+          compromising quality. This site is a compendium of our work from the
+          past year – twelve films that most exemplify our values at Courageous
+          Studios. We're proud to share each and every one with you as we fix
+          our gaze on the horizon, to the year that lies ahead.
         </p>
       </div>
       <div className="grid-container">

@@ -21,6 +21,7 @@ header {
     margin-left: 15px;
     cursor: default;
     color: rgba(255, 255, 255, 1);
+    transition: color 0.1s ease;
     align-self: flex-end; //to account for baseline offset of font
 
     &:hover {
@@ -50,14 +51,6 @@ header {
         }
       }
     }
-
-    // &:hover > #courageous-container {
-    //   #courageous:hover {
-    //     path {
-    //       fill: rgba(255, 255, 255, 1);
-    //     }
-    //   }
-    // }
 
     &:hover > #insta-container {
       #insta {
