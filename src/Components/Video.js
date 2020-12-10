@@ -4,8 +4,6 @@ import Vimeo from "@vimeo/player";
 import "../styles/Video.scss";
 import Footer from "./Footer";
 
-const VimeoPlayer = require("@vimeo/player");
-
 function Video(props) {
   const [buttonPlacement, setButtonPlacement] = useState(
     window.innerWidth > 648 ? "desktop" : "mobile"

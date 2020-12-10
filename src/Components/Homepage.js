@@ -33,6 +33,7 @@ export default function Homepage(props) {
                   autoPlay
                   muted
                   loop
+                  playsInline
                 />
                 <div className="video-info">
                   <p className="title">{item.title}</p>
