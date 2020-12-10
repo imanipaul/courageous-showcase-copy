@@ -1,21 +1,67 @@
 footer {
   width: 100%;
   margin-bottom: 100px;
-  //   display: flex;
-  //   align-items: center;
   .button-container {
-    margin: 0 auto;
-    width: 80%;
+    // margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0px 16px;
 
     button {
       border: none;
       background-color: black;
-      border: 1px solid white;
+      // border: 1px solid white;
       color: white;
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      // position: relative;
+
+      * {
+        margin: 0px;
+      }
+
+      &.previous {
+        text-align: left;
+
+        .button-content {
+          margin-left: 16px;
+        }
+      }
+
+      &.next {
+        text-align: right;
+        .button-content {
+          margin-right: 16px;
+        }
+      }
+
+      .button-content {
+        .theme {
+          font-family: "Trade Gothic Bold Condensed";
+          font-size: 24px;
+          color: white;
+          letter-spacing: -0.27px;
+          line-height: 24px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+
+        .title,
+        .brand {
+          font-family: "Lato Light";
+          font-size: 18px;
+          color: white;
+          letter-spacing: 0.4px;
+          line-height: 24px;
+        }
+
+        .brand {
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }

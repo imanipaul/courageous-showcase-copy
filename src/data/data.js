@@ -166,7 +166,7 @@ export const data = [
       "What I saw was not only a black scientist making a major influential and technical achievement... Dr. West leveraged his success for the next generation of scientists.",
   },
   {
-    theme: "Fun - Please update value",
+    theme: "Wonder",
     video: "453763150",
     loop: legoLoop,
     poster: legoPoster,
