@@ -105,8 +105,29 @@
       }
 
       .square {
+        position: relative;
+        pointer-events: none;
+
+        & > * {
+          pointer-events: auto;
+        }
         video {
           width: 100%;
+        }
+
+        img {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0%;
+          transition: opacity 0.3s ease;
+          // height: 100%;
+        }
+        &:hover {
+          img {
+            opacity: 100%;
+          }
         }
 
         &.s1 {

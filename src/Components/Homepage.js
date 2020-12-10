@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import "../styles/Homepage.scss";
 
@@ -30,10 +31,10 @@ export default function Homepage(props) {
                     e.preventDefault();
                     console.log("index", index);
                     props.setCurrentPage(index);
-                    window.history.pushState(null, "", `/${item.theme}`);
-                    // console.log((window.location.pathname = `/${item.theme}`));
+                    // window.history.pushState(null, "", `/${item.theme}`);
                   }}
                 >
+                  <img src={item.poster} alt="poster" />
                   <video
                     src={item.loop}
                     poster={item.poster}
@@ -42,6 +43,7 @@ export default function Homepage(props) {
                     loop
                     playsInline
                   />
+
                   <div className="video-info">
                     <p className="title">{item.title}</p>
                     <p className="brand">{item.brand}</p>
