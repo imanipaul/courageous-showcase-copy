@@ -101,7 +101,7 @@
       @media screen and (max-width: $tablet) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
-        row-gap: 40px;
+        row-gap: 30px;
       }
 
       .square {
@@ -322,6 +322,11 @@
 
           .title {
             text-align: left;
+            font-family: "Lato Regular";
+
+            @media screen and (max-width: $tablet) {
+              max-width: 224px;
+            }
           }
 
           .brand {
@@ -331,6 +336,7 @@
             @media screen and (max-width: $tablet) {
               letter-spacing: 1.07px;
               line-height: 16px;
+              padding-top: 3px;
             }
           }
         }

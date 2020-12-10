@@ -120,7 +120,7 @@ export const data = [
 
     poster: usaaPoster,
     brand: "USAA",
-    title: "Gold Star Families - Town name begins with 'E'",
+    title: "Small Town Heroes - Escondido",
     description:
       "Losing an active duty parent is one of the biggest challenges a military kid can face. That’s why veteran Perry Yee started Active Valor, a program that pairs Gold Star kids with veterans - providing children with mentorship and veterans with a new sense of purpose.",
     quote:

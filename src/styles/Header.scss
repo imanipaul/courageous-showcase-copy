@@ -2,14 +2,11 @@
 @import "./variables.scss";
 
 header {
-  //   border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 24px 0px;
-  //   position: relative;
-  //   overflow-x: hidden;
 
   @media screen and (max-width: $tablet) {
     padding: 16px 0px;
@@ -34,6 +31,11 @@ header {
     #insta {
       width: 26px;
       height: auto;
+    }
+
+    #courageous {
+      width: 26px;
+      height: 26px;
     }
 
     .desktop {
