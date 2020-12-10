@@ -1,0 +1,116 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.links {
+  width: 100%;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1065px) {
+    max-width: 612px;
+  }
+
+  @media screen and (max-width: $video-mobile-max) {
+    width: 100%;
+    max-width: none;
+  }
+  .button-container {
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 16px;
+
+    button {
+      border: none;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+
+      @media screen and (max-width: $video-mobile-max) {
+        flex-direction: column;
+      }
+
+      * {
+        margin: 0px;
+      }
+
+      &.previous {
+        text-align: left;
+
+        .button-content {
+          margin-left: 16px;
+          @media screen and (max-width: $video-mobile-max) {
+            margin: 0px;
+          }
+        }
+      }
+
+      &.next {
+        text-align: right;
+        .button-content {
+          margin-right: 16px;
+        }
+
+        @media screen and (max-width: $video-mobile-max) {
+          img {
+            order: 1;
+            align-self: flex-end;
+            margin-bottom: 13px; //increased due to baseline issue with font
+          }
+          .button-content {
+            order: 2;
+            margin: 0px;
+          }
+        }
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        @media screen and (max-width: $video-mobile-max) {
+          margin-bottom: 13px; //increased due to baseline issue with font
+        }
+      }
+
+      .button-content {
+        .theme {
+          font-family: "Trade Gothic Bold Condensed";
+          font-size: 24px;
+          color: white;
+          letter-spacing: -0.27px;
+          line-height: 24px;
+          text-transform: uppercase;
+          margin-bottom: 4px;
+
+          @media screen and (max-width: $video-mobile-max) {
+            font-size: 20px;
+            letter-spacing: -0.22px;
+            line-height: 20px;
+          }
+        }
+
+        .title,
+        .brand {
+          font-family: "Lato Light";
+          font-size: 18px;
+          color: white;
+          letter-spacing: 0.4px;
+          line-height: 24px;
+
+          @media screen and (max-width: $video-mobile-max) {
+            font-size: 12px;
+            letter-spacing: 0.27px;
+            line-height: 18px;
+          }
+        }
+
+        .brand {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

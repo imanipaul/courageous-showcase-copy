@@ -16,7 +16,7 @@ export default function Header(props) {
         Courageous Showcase
       </p>
       <HamburgerMenu visible={burgerVisible} setVisible={setBurgerVisible} />
-      <div className="links">
+      <div className="icons">
         {/* <Courageous fill="#ffffff" stroke="#ffffff" id="courageous" />
         <Vimeo fill="#ffffff" stroke="#ffffff" id="vimeo" />
         <Linkedin fill="#ffffff" stroke="#ffffff" id="linkedin" />

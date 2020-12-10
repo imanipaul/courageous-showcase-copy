@@ -9,6 +9,7 @@ import { data } from "./data/data";
 
 import familyOverlay from "./assets/images/family-overlay.jpg";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   // let dataMutated = data;
@@ -59,6 +60,7 @@ function App() {
             currentPage={currentPage}
           />
         )}
+        <Footer />
       </div>
     </HelmetProvider>
   );

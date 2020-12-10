@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Vimeo from "@vimeo/player";
-import Footer from "./Footer";
+import Links from "./Links";
 import quote from "../assets/images/QUOTE.svg";
 import "../styles/Video.scss";
 
@@ -90,7 +90,7 @@ function Video(props) {
           <p>{props.data.quote}</p>
         </div>
       </div>
-      <Footer data={props.allData} currentPage={props.currentPage} />
+      <Links data={props.allData} currentPage={props.currentPage} />
     </section>
   );
 }

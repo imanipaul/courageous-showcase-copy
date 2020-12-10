@@ -89,7 +89,6 @@
   .grid-container {
     padding: 0px 12px;
     box-sizing: border-box;
-    margin-bottom: 100px;
     .value-grid {
       display: grid;
       width: 100%;
@@ -127,7 +126,7 @@
         img {
           position: absolute;
           width: 100%;
-          top: 0;
+          top: 0.5px;
           left: 0;
           opacity: 0%;
           transition: opacity 0.3s ease;
@@ -363,6 +362,8 @@
             font-family: "Lato Light";
             text-transform: uppercase;
             text-align: right;
+            color: #bebebe;
+            font-size: 14px;
             @media screen and (max-width: $tablet) {
               letter-spacing: 1.07px;
               line-height: 16px;
