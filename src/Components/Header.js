@@ -1,6 +1,7 @@
 import "../styles/Header.scss";
 import courageous from "../assets/images/COURAGEOUS.svg";
 import insta from "../assets/images/insta.png";
+import insta2 from "../assets/images/INSTAGRAM.svg";
 import linkedin from "../assets/images/LINKEDIN.svg";
 import vimeo from "../assets/images/VIMEO.svg";
 import hamburger from "../assets/images/HAMBURGER.svg";
@@ -27,7 +28,7 @@ export default function Header(props) {
           <img src={linkedin} alt="linkedin" id="linkedin" />
         </a>
         <a href="#" className="desktop">
-          <img src={insta} alt="instagram" id="insta" />
+          <img src={insta2} alt="instagram" id="insta" />
         </a>
         <img
           className="mobile"

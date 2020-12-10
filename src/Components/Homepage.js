@@ -20,31 +20,37 @@ export default function Homepage(props) {
       </div>
       <div className="grid-container">
         <div className="value-grid">
-          {props.data.map((item, index) => {
-            return (
-              <div
-                className={`square s${index + 1}`}
-                key={index}
-                onClick={() => props.setCurrentPage(index)}
-              >
-                <video
-                  src={item.loop}
-                  poster={item.poster}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                />
-                <div className="video-info">
-                  <p className="title">{item.title}</p>
-                  <p className="brand">{item.brand}</p>
+          {props.shuffled &&
+            props.data.map((item, index) => {
+              return (
+                <div
+                  className={`square s${index + 1}`}
+                  key={index}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    console.log("index", index);
+                    props.setCurrentPage(index);
+                    window.history.pushState(null, "", `/${item.theme}`);
+                    // console.log((window.location.pathname = `/${item.theme}`));
+                  }}
+                >
+                  <video
+                    src={item.loop}
+                    poster={item.poster}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
+                  <div className="video-info">
+                    <p className="title">{item.title}</p>
+                    <p className="brand">{item.brand}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
       </div>
-      {/* <button onClick={() => props.setCurrentPage(3)}>Video Page</button> */}
     </section>
   );
 }

@@ -9,6 +9,7 @@ import sleepnumberLoop from "../assets/videos/2020-12-07-COU-VALUES-SLEEP-NUMBER
 import targetLoop from "../assets/videos/2020-12-07-COU-VALUES-TARGET.mp4";
 import usaaLoop from "../assets/videos/2020-12-07-COU-VALUES-USAA.mp4";
 import pgLoop from "../assets/videos/2020-12-08-COU-VALUES-PG.mp4";
+import legoLoop from "../assets/videos/2020-12-07-COU-VALUES-LEGO.mp4";
 
 import attPoster from "../assets/images/2020-12-07-COU-VALUES-ATT.jpg";
 import charlesschwabPoster from "../assets/images/2020-12-07-COU-VALUES-CHARLES-SCHWAB.jpg";
@@ -21,6 +22,7 @@ import robertoPoster from "../assets/images/2020-12-07-COU-VALUES-ROBERTO.jpg";
 import sleepnumberPoster from "../assets/images/2020-12-07-COU-VALUES-SLEEPNUMBER.jpg";
 import targetPoster from "../assets/images/2020-12-07-COU-VALUES-TARGET.jpg";
 import usaaPoster from "../assets/images/2020-12-07-COU-VALUES-USAA.jpg";
+import legoPoster from "../assets/images/2020-12-07-COU-VALUES-lego.jpg";
 
 export const data = [
   {
@@ -166,8 +168,8 @@ export const data = [
   {
     theme: "Fun - Please update value",
     video: "453763150",
-    loop: attLoop,
-    poster: attPoster,
+    loop: legoLoop,
+    poster: legoPoster,
     brand: "Lego",
     title: "Movie Stunts/Lego Cars",
     description:

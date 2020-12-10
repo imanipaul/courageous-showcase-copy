@@ -19,6 +19,7 @@ function Video(props) {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    console.log("data", props.data);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -27,7 +28,7 @@ function Video(props) {
     <section className="video">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{props.data.title}</title>
+        {/* <title>{props.data.title}</title> */}
       </Helmet>
       <div className="player-wrapper">
         <div className="overlay">
