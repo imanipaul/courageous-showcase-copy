@@ -45,42 +45,17 @@ function App() {
     <HelmetProvider>
       <div className="App">
         <Header setCurrentPage={setCurrentPage} />
-        {/* <Video
-          data={shuffledData[currentPage]}
-          allData={shuffledData}
-          currentPage={currentPage}
-        /> */}
-
-        {/* <Homepage
-          setCurrentPage={setCurrentPage}
-          shuffled={shuffled}
-          data={shuffledData}
-        /> */}
-
-        {/* {window.location.pathname.length > 1 ? (
-          <Video
-            data={shuffledData[currentPage]}
-            allData={shuffledData}
-            currentPage={currentPage}
-          />
-        ) : (
-          <Homepage
-            setCurrentPage={setCurrentPage}
-            shuffled={shuffled}
-            data={shuffledData}
-          />
-        )} */}
 
         {currentPage === "homepage" ? (
           <Homepage
             setCurrentPage={setCurrentPage}
             shuffled={shuffled}
-            data={shuffledData}
+            data={data}
           />
         ) : (
           <Video
-            data={shuffledData[currentPage]}
-            allData={shuffledData}
+            data={data[currentPage]}
+            allData={data}
             currentPage={currentPage}
           />
         )}

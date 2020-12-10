@@ -101,7 +101,7 @@
       @media screen and (max-width: $tablet) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
-        row-gap: 30px;
+        row-gap: 40px;
       }
 
       .square {
@@ -207,8 +207,8 @@
           }
         }
         &.s8 {
-          margin-left: 16px;
-          margin-right: 16px;
+          margin-left: 8px;
+          margin-right: 8px;
           margin-top: 20px;
           @media screen and (max-width: $homepage-laptop) {
             grid-column: 2;
@@ -285,8 +285,8 @@
         &.s11,
         &.s12 {
           video {
-            max-width: 568px;
-            width: 31vw;
+            // max-width: 568px;
+            // width: 31vw;
 
             @media screen and (max-width: $homepage-laptop) {
               width: 100%;
