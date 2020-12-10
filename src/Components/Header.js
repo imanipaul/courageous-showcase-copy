@@ -1,9 +1,8 @@
 import "../styles/Header.scss";
-import courageous from "../assets/images/COURAGEOUS.svg";
-import insta from "../assets/images/insta.png";
-import insta2 from "../assets/images/INSTAGRAM.svg";
-import linkedin from "../assets/images/LINKEDIN.svg";
-import vimeo from "../assets/images/VIMEO.svg";
+import { ReactComponent as Courageous } from "../assets/images/COURAGEOUS.svg";
+import { ReactComponent as Insta } from "../assets/images/INSTAGRAM.svg";
+import { ReactComponent as Linkedin } from "../assets/images/LINKEDIN.svg";
+import { ReactComponent as Vimeo } from "../assets/images/VIMEO.svg";
 import hamburger from "../assets/images/HAMBURGER.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState } from "react";
@@ -18,17 +17,21 @@ export default function Header(props) {
       </p>
       <HamburgerMenu visible={burgerVisible} setVisible={setBurgerVisible} />
       <div className="links">
-        <a href="#" className="desktop">
-          <img src={courageous} alt="logo" id="courageous" />
+        {/* <Courageous fill="#ffffff" stroke="#ffffff" id="courageous" />
+        <Vimeo fill="#ffffff" stroke="#ffffff" id="vimeo" />
+        <Linkedin fill="#ffffff" stroke="#ffffff" id="linkedin" />
+        <Insta fill="#ffffff" stroke="#ffffff" id="insta" /> */}
+        <a href="#" className="desktop" id="courageous-container">
+          <Courageous fill="#ffffff" stroke="#ffffff" id="courageous" />
         </a>
-        <a href="#" className="desktop">
-          <img src={vimeo} alt="vimeo" id="vimeo" />
+        <a href="#" className="desktop" id="vimeo-container">
+          <Vimeo fill="#ffffff" stroke="#ffffff" id="vimeo" />
         </a>
-        <a href="#" className="desktop">
-          <img src={linkedin} alt="linkedin" id="linkedin" />
+        <a href="#" className="desktop" id="linkedin-container">
+          <Linkedin fill="#ffffff" stroke="#ffffff" id="linkedin" />
         </a>
-        <a href="#" className="desktop">
-          <img src={insta2} alt="instagram" id="insta" />
+        <a href="#" className="desktop" id="insta-container">
+          <Insta fill="#ffffff" stroke="#ffffff" id="insta" />
         </a>
         <img
           className="mobile"

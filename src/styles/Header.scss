@@ -20,12 +20,80 @@ header {
     font-family: "Trade Gothic Bold Condensed";
     margin-left: 15px;
     cursor: default;
+    color: rgba(255, 255, 255, 1);
     align-self: flex-end; //to account for baseline offset of font
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .links {
     * {
       padding: 0px 12px;
+      color: white;
+    }
+
+    &:hover > #courageous-container {
+      #courageous {
+        path {
+          fill: rgba(255, 255, 255, 0.3);
+        }
+      }
+      #courageous:hover {
+        path {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+
+    // &:hover > #courageous-container {
+    //   #courageous:hover {
+    //     path {
+    //       fill: rgba(255, 255, 255, 1);
+    //     }
+    //   }
+    // }
+
+    &:hover > #insta-container {
+      #insta {
+        path {
+          fill: rgba(255, 255, 255, 0.3);
+        }
+      }
+      #insta:hover {
+        path {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    &:hover > #vimeo-container {
+      #vimeo {
+        path {
+          fill: rgba(255, 255, 255, 0.3);
+        }
+      }
+      #vimeo:hover {
+        path {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    &:hover > #linkedin-container {
+      #linkedin {
+        path {
+          fill: rgba(255, 255, 255, 0.3);
+        }
+      }
+      #linkedin:hover {
+        path {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
     }
 
     #insta {
@@ -37,6 +105,38 @@ header {
       width: 26px;
       height: 26px;
     }
+
+    #courageous,
+    #vimeo,
+    #insta,
+    #linkedin {
+      path {
+        fill: rgba(255, 255, 255, 0.6);
+      }
+
+      &:hover {
+        path {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+
+      &:active {
+        path {
+          fill: #1b1b1b;
+        }
+      }
+    }
+
+    // #courageous-container:hover ~ * {
+    //   path {
+    //     fill: rgba(255, 255, 255, 0.3);
+    //   }
+    // }
+    // #insta-container:hover + #courageous-container {
+    //   path {
+    //     fill: rgba(255, 255, 255, 0.3);
+    //   }
+    // }
 
     .desktop {
       display: inline;
@@ -53,3 +153,61 @@ header {
     }
   }
 }
+
+// #courageous,
+// #vimeo,
+// #insta,
+// #linkedin {
+//   path {
+//     fill: rgba(255, 255, 255, 0.6);
+//   }
+
+//   &:hover {
+//     path {
+//       fill: rgba(255, 255, 255, 1);
+//     }
+//   }
+
+//   &:active {
+//     path {
+//       fill: #1b1b1b;
+//     }
+//   }
+// }
+
+// #courageous-container:hover {
+//   #courageous {
+//     path {
+//       fill: rgba(255, 255, 255, 1);
+//     }
+//   }
+// }
+// #insta-container:hover {
+//   #insta {
+//     path {
+//       fill: rgba(255, 255, 255, 1);
+//     }
+//   }
+// }
+// #vimeo-container:hover {
+//   #vimeo {
+//     path {
+//       fill: rgba(255, 255, 255, 1);
+//     }
+//   }
+// }
+// #linkedin-container:hover {
+//   #linkedin {
+//     path {
+//       fill: rgba(255, 255, 255, 1);
+//     }
+//   }
+// }
+
+// #courageous-container:hover ~ * {
+//   * {
+//     path {
+//       fill: rgba(255, 255, 255, 0.3);
+//     }
+//   }
+// }
