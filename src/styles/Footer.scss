@@ -1,6 +1,18 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
 footer {
   width: 100%;
   margin-bottom: 100px;
+
+  @media screen and (max-width: 1065px) {
+    max-width: 612px;
+  }
+
+  @media screen and (max-width: $video-mobile-max) {
+    width: 100%;
+    max-width: none;
+  }
   .button-container {
     // margin: 0 auto;
     display: flex;
@@ -12,12 +24,14 @@ footer {
     button {
       border: none;
       background-color: black;
-      // border: 1px solid white;
       color: white;
       display: flex;
       flex-direction: row;
       padding: 0px;
-      // position: relative;
+
+      @media screen and (max-width: $video-mobile-max) {
+        flex-direction: column;
+      }
 
       * {
         margin: 0px;
@@ -28,6 +42,9 @@ footer {
 
         .button-content {
           margin-left: 16px;
+          @media screen and (max-width: $video-mobile-max) {
+            margin: 0px;
+          }
         }
       }
 
@@ -35,6 +52,26 @@ footer {
         text-align: right;
         .button-content {
           margin-right: 16px;
+        }
+
+        @media screen and (max-width: $video-mobile-max) {
+          img {
+            order: 1;
+            align-self: flex-end;
+            margin-bottom: 13px; //increased due to baseline issue with font
+          }
+          .button-content {
+            order: 2;
+            margin: 0px;
+          }
+        }
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        @media screen and (max-width: $video-mobile-max) {
+          margin-bottom: 13px; //increased due to baseline issue with font
         }
       }
 
@@ -46,7 +83,13 @@ footer {
           letter-spacing: -0.27px;
           line-height: 24px;
           text-transform: uppercase;
-          margin-bottom: 8px;
+          margin-bottom: 4px;
+
+          @media screen and (max-width: $video-mobile-max) {
+            font-size: 20px;
+            letter-spacing: -0.22px;
+            line-height: 20px;
+          }
         }
 
         .title,
@@ -56,6 +99,12 @@ footer {
           color: white;
           letter-spacing: 0.4px;
           line-height: 24px;
+
+          @media screen and (max-width: $video-mobile-max) {
+            font-size: 12px;
+            letter-spacing: 0.27px;
+            line-height: 18px;
+          }
         }
 
         .brand {
