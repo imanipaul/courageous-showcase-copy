@@ -10,8 +10,6 @@
   @media screen and (max-width: $video-mobile-max) {
     align-items: flex-start;
   }
-  //   .player-container {
-  //     width: 60vw;
 
   .player-wrapper {
     position: relative;
@@ -201,6 +199,7 @@
       min-height: 188px;
       border: 1px solid white;
       align-self: center;
+      position: relative;
 
       @media screen and (max-width: $video-break - 1) {
         margin-top: 40px;
@@ -216,12 +215,18 @@
         margin-right: 16px;
       }
 
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
       p {
         font-family: "Trade Gothic Bold Condensed";
         font-size: 36px;
         letter-spacing: -0.4px;
         color: white;
-        text-align: center;
+        text-align: left;
         line-height: 36px;
         text-transform: uppercase;
         display: flex;

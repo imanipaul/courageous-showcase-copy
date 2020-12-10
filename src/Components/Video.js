@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Vimeo from "@vimeo/player";
-import "../styles/Video.scss";
 import Footer from "./Footer";
+import quote from "../assets/images/QUOTE.svg";
+import "../styles/Video.scss";
 
 function Video(props) {
   const [buttonPlacement, setButtonPlacement] = useState(
@@ -85,6 +86,7 @@ function Video(props) {
           )}
         </div>
         <div className="quote">
+          <img src={quote} alt="quote marks" />
           <p>{props.data.quote}</p>
         </div>
       </div>
