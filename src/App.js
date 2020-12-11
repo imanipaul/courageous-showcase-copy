@@ -193,6 +193,9 @@ function App() {
       <div className="App">
         <Header setCurrentPage={setCurrentPage} />
         {pickVideoPage()}
+        {/* {currentPage !== "homepage" && (
+          <Links data={data} currentPage={currentPage} />
+        )} */}
         <Footer />
       </div>
     </HelmetProvider>

@@ -55,7 +55,7 @@
         }
 
         &:hover {
-          background-color: black;
+          background-color: transparent;
           border: 1px solid white;
           color: white;
         }
@@ -197,7 +197,7 @@
           font-size: 18px;
           color: white;
           letter-spacing: 0.4px;
-          line-height: 24px;
+          line-height: 28px;
           margin-left: auto;
           @media screen and (max-width: $video-break - 1) {
             font-size: 16px;
