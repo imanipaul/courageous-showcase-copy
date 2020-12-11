@@ -32,6 +32,7 @@ export default function Homepage(props) {
                     e.preventDefault();
                     console.log("index", index);
                     props.setCurrentPage(index);
+                    window.location = `/${item.theme}`;
                     // window.history.pushState(null, "", `/${item.theme}`);
                   }}
                 >

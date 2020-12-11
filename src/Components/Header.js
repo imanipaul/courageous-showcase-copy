@@ -48,9 +48,7 @@ export default function Header(props) {
 
   return (
     <header>
-      <p onClick={() => props.setCurrentPage("homepage")}>
-        Courageous Showcase
-      </p>
+      <p onClick={() => (window.location = "/")}>Courageous Showcase</p>
       <HamburgerMenu visible={burgerVisible} setVisible={setBurgerVisible} />
       <div className="icons">
         <a href="#" className="desktop" id="courageous-container">

@@ -19,6 +19,8 @@ function Video(props) {
   }
 
   useEffect(() => {
+    props.setCurrentPage(props.value);
+
     window.addEventListener("resize", handleResize);
     console.log("data", props.data);
 
@@ -64,8 +66,6 @@ function Video(props) {
           allow="autoplay; fullscreen"
           allowFullScreen
         ></iframe>
-
-        {/* <iframe src="https://player.vimeo.com/video/434733209?color=b89544&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> */}
       </div>
       <div className="content">
         <div className="info">
@@ -90,7 +90,10 @@ function Video(props) {
           <p>{props.data.quote}</p>
         </div>
       </div>
-      <Links data={props.allData} currentPage={props.currentPage} />
+
+      {props.allData && props.currentPage && (
+        <Links data={props.allData} currentPage={props.currentPage} />
+      )}
     </section>
   );
 }

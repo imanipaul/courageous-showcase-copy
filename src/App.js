@@ -41,12 +41,159 @@ function App() {
     // setShuffled(true);
   };
 
+  function pickVideoPage() {
+    let path = window.location.pathname;
+
+    if (path === "/Family") {
+      return (
+        <Video
+          data={data[0]}
+          allData={data}
+          currentPage={currentPage}
+          value={0}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Equality") {
+      // setCurrentPage(1);
+      return (
+        <Video
+          data={data[1]}
+          allData={data}
+          currentPage={currentPage}
+          value={1}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Beauty") {
+      // setCurrentPage(2);
+      return (
+        <Video
+          data={data[2]}
+          allData={data}
+          currentPage={currentPage}
+          value={2}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Innovation") {
+      // setCurrentPage(3);
+      return (
+        <Video
+          data={data[3]}
+          allData={data}
+          currentPage={currentPage}
+          value={3}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Perseverance") {
+      // setCurrentPage(4);
+      return (
+        <Video
+          data={data[4]}
+          allData={data}
+          currentPage={currentPage}
+          value={4}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Dedication") {
+      // setCurrentPage(5);
+      return (
+        <Video
+          data={data[5]}
+          allData={data}
+          currentPage={currentPage}
+          value={5}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Stewardship") {
+      // setCurrentPage(6);
+      return (
+        <Video
+          data={data[6]}
+          allData={data}
+          currentPage={currentPage}
+          value={6}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Service") {
+      // setCurrentPage(7);
+      return (
+        <Video
+          data={data[7]}
+          allData={data}
+          currentPage={currentPage}
+          value={7}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Mobility") {
+      // setCurrentPage(8);
+      return (
+        <Video
+          data={data[8]}
+          allData={data}
+          currentPage={currentPage}
+          value={8}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Caregiving") {
+      // setCurrentPage(9);
+      return (
+        <Video
+          data={data[9]}
+          allData={data}
+          currentPage={currentPage}
+          value={9}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Progress") {
+      // setCurrentPage(10);
+      return (
+        <Video
+          data={data[10]}
+          allData={data}
+          currentPage={currentPage}
+          value={10}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/Wonder") {
+      // setCurrentPage(11);
+      return (
+        <Video
+          data={data[11]}
+          allData={data}
+          currentPage={currentPage}
+          value={11}
+          setCurrentPage={setCurrentPage}
+        />
+      );
+    } else if (path === "/") {
+      console.log("home??");
+      return (
+        <Homepage
+          setCurrentPage={setCurrentPage}
+          shuffled={shuffled}
+          data={data}
+        />
+      );
+    }
+  }
+
   return (
     <HelmetProvider>
       <div className="App">
         <Header setCurrentPage={setCurrentPage} />
+        {pickVideoPage()}
 
-        {currentPage === "homepage" ? (
+        {/* {currentPage === "homepage" ? (
           <Homepage
             setCurrentPage={setCurrentPage}
             shuffled={shuffled}
@@ -58,7 +205,7 @@ function App() {
             allData={data}
             currentPage={currentPage}
           />
-        )}
+        )} */}
         <Footer />
       </div>
     </HelmetProvider>
