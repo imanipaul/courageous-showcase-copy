@@ -119,7 +119,7 @@ export const data = [
     description:
       "Basketball is back with an innovative new format that promises to get fans up and cheering. To celebrate, Invesco QQQ is excited to share the story of HomeCourt, a top basketball app that uses AI and augmented reality to help basketball players of all skill levels train smarter from the comfort of their own homes. Let’s get back in the game and innovate play!",
     quote:
-      "Hard work beats talent when talent fails to work hard. When Lanie sinks that perfect shot, it represents all the shots she has taken to get here",
+      "Hard work beats talent when talent fails to work hard. When Lanie sinks that perfect shot, it represents all the shots she has taken to get here.",
   },
   {
     theme: "Stewardship",

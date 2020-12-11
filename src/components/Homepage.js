@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import preview from "../assets/images/Homepage-Social-Post-Showcase-LINKEDIN.png";
-import { Helmet } from "react-helmet-async";
 
 import "../styles/Homepage.scss";
 import MetaDecorator from "./MetaDecorator";

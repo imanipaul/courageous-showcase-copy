@@ -21,6 +21,10 @@
     justify-content: space-between;
     margin: 0px 16px;
 
+    @media screen and (max-width: 425px) {
+      align-items: flex-start;
+    }
+
     button {
       border: none;
       background-color: black;
@@ -101,11 +105,18 @@
           color: white;
           letter-spacing: 0.4px;
           line-height: 24px;
+          max-width: 320px;
 
           @media screen and (max-width: $video-mobile-max) {
             font-size: 12px;
             letter-spacing: 0.27px;
             line-height: 18px;
+          }
+          @media screen and (max-width: $tablet) {
+            max-width: 240px;
+          }
+          @media screen and (max-width: 425px) {
+            max-width: 120px;
           }
         }
 
