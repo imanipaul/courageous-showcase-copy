@@ -14,6 +14,9 @@ footer {
   @media screen and (max-width: $video-mobile-max) {
     height: 80px;
   }
+  @media screen and (max-width: 425px) {
+    margin-top: 0px;
+  }
 
   div {
     &:hover {

@@ -111,6 +111,12 @@
         row-gap: 40px;
       }
 
+      #Stewardship {
+        .title {
+          max-width: 55vw;
+        }
+      }
+
       .square {
         position: relative;
         pointer-events: none;

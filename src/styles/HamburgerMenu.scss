@@ -40,6 +40,10 @@
       text-decoration: none;
       color: white;
 
+      @media screen and (max-width: 425px) {
+        margin-bottom: 40px;
+      }
+
       &:first-of-type {
         position: relative;
         img {

@@ -36,6 +36,7 @@ export default function Homepage(props) {
               return (
                 <div
                   className={`square s${index + 1}`}
+                  id={`${item.theme}`}
                   key={index}
                   onClick={(e) => {
                     e.preventDefault();
