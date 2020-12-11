@@ -33,14 +33,10 @@ function Video(props) {
       <MetaDecorator
         title={`Courageous Showcase | ${props.data.theme}`}
         description={props.data.description}
-        image={props.data.poster}
+        image={props.data.preview}
         video={props.data.loop}
         url={`${props.url}/${props.data.theme}`}
       />
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>Courageous Showcase | {props.data.theme}</title>
-      </Helmet> */}
       <div className="player-wrapper">
         <div className="overlay">
           <video

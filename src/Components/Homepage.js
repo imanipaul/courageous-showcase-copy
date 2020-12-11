@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import logo from "../assets/images/2020-12-07-COU-VALUES-PFIZER.jpg";
+import preview from "../assets/images/Homepage-Social-Post-Showcase-LINKEDIN.png";
 import { Helmet } from "react-helmet-async";
 
 import "../styles/Homepage.scss";
@@ -16,7 +16,7 @@ export default function Homepage(props) {
         past year – twelve films that most exemplify our values at Courageous
         Studios. We're proud to share each and every one with you as we fix
         our gaze on the horizon, to the year that lies ahead."
-        image={logo}
+        image={preview}
       />
       <div className="header">
         <h1>2020 in film</h1>

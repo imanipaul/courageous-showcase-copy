@@ -24,12 +24,26 @@ import targetPoster from "../assets/images/2020-12-07-COU-VALUES-TARGET.jpg";
 import usaaPoster from "../assets/images/2020-12-07-COU-VALUES-USAA.jpg";
 import legoPoster from "../assets/images/2020-12-07-COU-VALUES-lego.jpg";
 
+import attPreview from "../assets/images/Social-Post-ATT.png";
+import charlesSchwabPreview from "../assets/images/Social-Post-Charles-Schwab.png";
+import invescoPreview from "../assets/images/Social-Post-INVESCO.png";
+import jhPreview from "../assets/images/Social-Post-JOHN-HANCOCK.png";
+import narPreview from "../assets/images/Social-Post-NAR.png";
+import pfizerPreview from "../assets/images/Social-Post-Pfizer.png";
+import pgPreview from "../assets/images/Social-Post-PG.png";
+import robertoCoinPreview from "../assets/images/Social-Post-Roberto-Coin.png";
+import snPreview from "../assets/images/Social-Post-SLEEP-NUMBER.png";
+import targetPreview from "../assets/images/Social-Post-Target.png";
+import usaaPreview from "../assets/images/Social-Post-USAA.png";
+import legoPreview from "../assets/images/Social-Post-Lego.png";
+
 export const data = [
   {
     theme: "Family",
     video: "434733209",
     loop: targetLoop,
     poster: targetPoster,
+    preview: targetPreview,
     brand: "Target",
     title: "How One Dad Started a Movement to Celebrate Black Fatherhood",
     description:
@@ -42,6 +56,8 @@ export const data = [
     video: "412796207",
     loop: pgLoop,
     poster: pgPoster,
+    preview: pgPreview,
+
     brand: "P&G/Secret",
     title: "You Can't Pause Progress",
     description:
@@ -54,6 +70,8 @@ export const data = [
     video: "376857392",
     loop: robertoLoop,
     poster: robertoPoster,
+    preview: robertoCoinPreview,
+
     brand: "Roberto Coin",
     title: "Inspired By Beauty",
     description:
@@ -65,6 +83,7 @@ export const data = [
     theme: "Innovation",
     video: "434734374",
     loop: pfizerLoop,
+    preview: pfizerPreview,
 
     poster: pfizerPoster,
     brand: "Pfizer",
@@ -78,6 +97,7 @@ export const data = [
     theme: "Perseverance",
     video: "430464732",
     loop: charclesschwabLoop,
+    preview: charlesSchwabPreview,
 
     poster: charlesschwabPoster,
     brand: "Charles Schwab",
@@ -91,6 +111,7 @@ export const data = [
     theme: "Dedication",
     video: "442091766",
     loop: invescoLoop,
+    preview: invescoPreview,
 
     poster: invescoPoster,
     brand: "Invesco",
@@ -104,6 +125,7 @@ export const data = [
     theme: "Stewardship",
     video: "383798189",
     loop: jhLoop,
+    preview: jhPreview,
 
     poster: jhPoster,
     brand: "John Hancock",
@@ -117,6 +139,7 @@ export const data = [
     theme: "Service",
     video: "470720637",
     loop: usaaLoop,
+    preview: usaaPreview,
 
     poster: usaaPoster,
     brand: "USAA",
@@ -130,6 +153,7 @@ export const data = [
     theme: "Mobility",
     video: "404740466",
     loop: narLoop,
+    preview: narPreview,
 
     poster: narPoster,
     brand: "NAR",
@@ -143,6 +167,7 @@ export const data = [
     theme: "Caregiving",
     video: "441078391",
     loop: sleepnumberLoop,
+    preview: snPreview,
 
     poster: sleepnumberPoster,
     brand: "Sleep Number",
@@ -156,6 +181,7 @@ export const data = [
     theme: "Progress",
     video: "487358399",
     loop: attLoop,
+    preview: attPreview,
 
     poster: attPoster,
     brand: "AT&T",
@@ -169,7 +195,9 @@ export const data = [
     theme: "Wonder",
     video: "453763150",
     loop: legoLoop,
-    poster: legoPoster,
+    preview: legoPoster,
+
+    poster: legoPreview,
     brand: "Lego",
     title: "Movie Stunts/Lego Cars",
     description:
