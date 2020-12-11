@@ -31,6 +31,10 @@ header {
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: -5px;
+    }
   }
 
   .icons {

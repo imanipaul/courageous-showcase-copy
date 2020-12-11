@@ -36,6 +36,22 @@
       font-family: "Trade Gothic Bold Condensed";
       margin-bottom: 24px;
       text-transform: uppercase;
+
+      &:first-of-type {
+        // display: flex;
+        // align-items: center;
+        position: relative;
+        img {
+          position: absolute;
+          top: -4px;
+          right: -35px;
+          width: 10px;
+          height: 10px;
+          // align-self: flex-start;
+          margin: 0px;
+          // margin-top: -5px;
+        }
+      }
     }
   }
 }
