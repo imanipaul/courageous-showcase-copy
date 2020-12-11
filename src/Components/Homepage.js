@@ -32,7 +32,7 @@ export default function Homepage(props) {
       <div className="grid-container">
         <div className="value-grid">
           {props.shuffled &&
-            props.data.map((item, index) => {
+            props.shuffledData.map((item, index) => {
               return (
                 <div
                   className={`square s${index + 1}`}

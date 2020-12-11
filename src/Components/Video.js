@@ -101,7 +101,11 @@ function Video(props) {
       </div>
 
       {props.currentPage !== "homepage" && (
-        <Links data={props.allData} currentPage={props.currentPage} />
+        <Links
+          data={props.allData}
+          currentPage={props.currentPage}
+          shuffledData={props.shuffledData}
+        />
       )}
     </section>
   );
