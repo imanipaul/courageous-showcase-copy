@@ -195,9 +195,9 @@ export const data = [
     theme: "Wonder",
     video: "453763150",
     loop: legoLoop,
-    preview: legoPoster,
+    preview: legoPreview,
 
-    poster: legoPreview,
+    poster: legoPoster,
     brand: "Lego",
     title: "Movie Stunts/Lego Cars",
     description:
