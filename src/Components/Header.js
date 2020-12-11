@@ -51,7 +51,13 @@ export default function Header(props) {
       <p onClick={() => (window.location = "/")}>Courageous Showcase</p>
       <HamburgerMenu visible={burgerVisible} setVisible={setBurgerVisible} />
       <div className="icons">
-        <a href="#" className="desktop" id="courageous-container">
+        <a
+          href="https://www.courageousstudios.com"
+          className="desktop"
+          id="courageous-container"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Courageous
             fill="#ffffff"
             stroke="#ffffff"
@@ -60,7 +66,13 @@ export default function Header(props) {
             ref={courageousIconRef}
           />
         </a>
-        <a href="#" className="desktop" id="vimeo-container">
+        <a
+          href="https://vimeo.com/user62308493"
+          className="desktop"
+          id="vimeo-container"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Vimeo
             fill="#ffffff"
             stroke="#ffffff"
@@ -68,7 +80,14 @@ export default function Header(props) {
             ref={vimeoIconRef}
           />
         </a>
-        <a href="#" className="desktop" id="linkedin-container">
+        <a
+          href="https://www.linkedin.com/company/courageous-studios"
+          target="_blank"
+          className="desktop"
+          id="linkedin-container"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Linkedin
             fill="#ffffff"
             stroke="#ffffff"
@@ -76,7 +95,13 @@ export default function Header(props) {
             ref={linkedinIconRef}
           />
         </a>
-        <a href="#" className="desktop" id="insta-container">
+        <a
+          href="https://www.instagram.com/courageous_studios"
+          className="desktop"
+          id="insta-container"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Insta
             fill="#ffffff"
             stroke="#ffffff"

@@ -10,13 +10,35 @@ export default function HamburgerMenu(props) {
     >
       <nav>
         <img src={close} alt="close" onClick={() => props.setVisible(false)} />
-        <a>
+        <a
+          href="https://www.courageousstudios.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           Who we are
           <img src={arrow} alt="arrow" />
         </a>
-        <a>Vimeo</a>
-        <a>LinkedIn</a>
-        <a>Instagram</a>
+        <a
+          href="https://vimeo.com/user62308493"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Vimeo
+        </a>
+        <a
+          href="https://www.linkedin.com/company/courageous-studios"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://www.instagram.com/courageous_studios"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram
+        </a>
       </nav>
     </section>
   );
