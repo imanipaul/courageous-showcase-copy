@@ -17,6 +17,8 @@ function App() {
   const [shuffledData, setShuffledData] = useState([]);
   const [shuffled, setShuffled] = useState(false);
 
+  let url = "localhost:3000";
+
   let dataMutated = JSON.parse(JSON.stringify(data));
 
   useEffect(() => {
@@ -48,6 +50,7 @@ function App() {
     if (path === "/Family") {
       return (
         <Video
+          url={url}
           data={data[0]}
           allData={data}
           currentPage={currentPage}
@@ -81,6 +84,7 @@ function App() {
       // setCurrentPage(3);
       return (
         <Video
+          url={url}
           data={data[3]}
           allData={data}
           currentPage={currentPage}
@@ -92,6 +96,7 @@ function App() {
       // setCurrentPage(4);
       return (
         <Video
+          url={url}
           data={data[4]}
           allData={data}
           currentPage={currentPage}
@@ -103,6 +108,7 @@ function App() {
       // setCurrentPage(5);
       return (
         <Video
+          url={url}
           data={data[5]}
           allData={data}
           currentPage={currentPage}
@@ -114,6 +120,7 @@ function App() {
       // setCurrentPage(6);
       return (
         <Video
+          url={url}
           data={data[6]}
           allData={data}
           currentPage={currentPage}
@@ -125,6 +132,7 @@ function App() {
       // setCurrentPage(7);
       return (
         <Video
+          url={url}
           data={data[7]}
           allData={data}
           currentPage={currentPage}
@@ -136,6 +144,7 @@ function App() {
       // setCurrentPage(8);
       return (
         <Video
+          url={url}
           data={data[8]}
           allData={data}
           currentPage={currentPage}
@@ -147,6 +156,7 @@ function App() {
       // setCurrentPage(9);
       return (
         <Video
+          url={url}
           data={data[9]}
           allData={data}
           currentPage={currentPage}
@@ -158,6 +168,7 @@ function App() {
       // setCurrentPage(10);
       return (
         <Video
+          url={url}
           data={data[10]}
           allData={data}
           currentPage={currentPage}
@@ -169,6 +180,7 @@ function App() {
       // setCurrentPage(11);
       return (
         <Video
+          url={url}
           data={data[11]}
           allData={data}
           currentPage={currentPage}

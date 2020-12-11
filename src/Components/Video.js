@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
+import MetaDecorator from "./MetaDecorator";
 import Vimeo from "@vimeo/player";
 import Links from "./Links";
 import quote from "../assets/images/QUOTE.svg";
@@ -29,10 +30,17 @@ function Video(props) {
 
   return (
     <section className="video">
-      <Helmet>
+      <MetaDecorator
+        title={`Courageous Showcase | ${props.data.theme}`}
+        description={props.data.description}
+        image={props.data.poster}
+        video={props.data.loop}
+        url={`${props.url}/${props.data.theme}`}
+      />
+      {/* <Helmet>
         <meta charSet="utf-8" />
-        {/* <title>{props.data.title}</title> */}
-      </Helmet>
+        <title>Courageous Showcase | {props.data.theme}</title>
+      </Helmet> */}
       <div className="player-wrapper">
         <div className="overlay">
           <video
