@@ -48,6 +48,13 @@ header {
       // pointer-events: auto;
     }
 
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.16px;
+      align-self: center;
+    }
+
     path {
       transition: all 0.3s ease;
     }

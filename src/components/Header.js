@@ -51,6 +51,7 @@ export default function Header(props) {
       <p onClick={() => (window.location = "/")}>Courageous Showcase</p>
       <HamburgerMenu visible={burgerVisible} setVisible={setBurgerVisible} />
       <div className="icons">
+        <p className="desktop">Find us at</p>
         <a
           href="https://www.courageousstudios.com"
           className="desktop"
