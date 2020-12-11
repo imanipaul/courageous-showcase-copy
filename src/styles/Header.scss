@@ -41,6 +41,10 @@ header {
       // pointer-events: auto;
     }
 
+    path {
+      transition: all 0.3s ease;
+    }
+
     &:hover > #courageous-container {
       pointer-events: none;
 
