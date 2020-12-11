@@ -15,35 +15,61 @@ footer {
     height: 80px;
   }
 
-  img {
-    width: 10px;
-    height: 10px;
-    // margin-right: 5px;
-    position: absolute;
-    top: 0;
-    left: -15px;
-  }
+  div {
+    &:hover {
+      p {
+        color: rgba(255, 255, 255, 0.6);
+      }
 
-  p {
-    position: relative;
-  }
-  .first,
-  .last {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: -0.1px;
-    text-transform: uppercase;
-
-    @media screen and (max-width: $video-mobile-max) {
-      font-size: 20px;
+      .arrow {
+        path {
+          fill: rgba(255, 255, 255, 0.6);
+        }
+      }
     }
-  }
 
-  .last {
-    font-family: "Trade Gothic";
-  }
+    &:active {
+      p {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .arrow {
+        path {
+          fill: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
 
-  .first {
-    font-family: "Trade Gothic Bold Condensed";
+    .arrow {
+      width: 10px;
+      height: 10px;
+      // margin-right: 5px;
+      position: absolute;
+      top: 0;
+      left: -15px;
+    }
+
+    p {
+      position: relative;
+      transition: color 0.1s ease;
+    }
+    .first,
+    .last {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: -0.1px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $video-mobile-max) {
+        font-size: 20px;
+      }
+    }
+
+    .last {
+      font-family: "Trade Gothic";
+    }
+
+    .first {
+      font-family: "Trade Gothic Bold Condensed";
+    }
   }
 }
