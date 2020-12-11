@@ -1,7 +1,7 @@
 import "./App.css";
 import { HelmetProvider } from "react-helmet-async";
 
-import Header from "./Components/Header";
+import Header from "./components/Header";
 import Video from "./components/Video";
 import Homepage from "./components/Homepage";
 
