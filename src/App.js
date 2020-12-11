@@ -7,7 +7,6 @@ import Homepage from "./components/Homepage";
 
 import { data } from "./data/data";
 
-import familyOverlay from "./assets/images/family-overlay.jpg";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 

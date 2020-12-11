@@ -34,13 +34,19 @@ header {
   }
 
   .icons {
+    // pointer-events: none;
     * {
       padding: 0px 12px;
       color: white;
+      // pointer-events: auto;
     }
 
     &:hover > #courageous-container {
+      pointer-events: none;
+
       #courageous {
+        pointer-events: auto;
+
         path {
           fill: rgba(255, 255, 255, 0.3);
         }
@@ -53,7 +59,11 @@ header {
     }
 
     &:hover > #insta-container {
+      pointer-events: none;
+
       #insta {
+        pointer-events: auto;
+
         path {
           fill: rgba(255, 255, 255, 0.3);
         }
@@ -65,7 +75,11 @@ header {
       }
     }
     &:hover > #vimeo-container {
+      pointer-events: none;
+
       #vimeo {
+        pointer-events: auto;
+
         path {
           fill: rgba(255, 255, 255, 0.3);
         }
@@ -77,7 +91,11 @@ header {
       }
     }
     &:hover > #linkedin-container {
+      pointer-events: none;
+
       #linkedin {
+        pointer-events: auto;
+
         path {
           fill: rgba(255, 255, 255, 0.3);
         }
@@ -99,26 +117,26 @@ header {
       height: 26px;
     }
 
-    #courageous,
-    #vimeo,
-    #insta,
-    #linkedin {
-      path {
-        fill: rgba(255, 255, 255, 0.6);
-      }
+    // #courageous,
+    // #vimeo,
+    // #insta,
+    // #linkedin {
+    //   path {
+    //     fill: rgba(255, 255, 255, 0.6);
+    //   }
 
-      &:hover {
-        path {
-          fill: rgba(255, 255, 255, 1);
-        }
-      }
+    //   &:hover {
+    //     path {
+    //       fill: rgba(255, 255, 255, 1);
+    //     }
+    //   }
 
-      &:active {
-        path {
-          fill: #1b1b1b;
-        }
-      }
-    }
+    //   &:active {
+    //     path {
+    //       fill: #1b1b1b;
+    //     }
+    //   }
+    // }
 
     // #courageous-container:hover ~ * {
     //   path {
