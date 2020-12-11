@@ -10,7 +10,7 @@ export default function Homepage(props) {
         <title>Courageous Showcase</title>
       </Helmet>
       <div className="header">
-        <h1>2020 Values</h1>
+        <h1>2020 in film</h1>
         <p>
           Time and again, 2020 has challenged us to be more agile in our
           approach to telling brands' stories, prioritizing safety without
