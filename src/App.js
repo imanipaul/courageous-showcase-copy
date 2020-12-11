@@ -196,7 +196,7 @@ function App() {
         {/* {currentPage !== "homepage" && (
           <Links data={data} currentPage={currentPage} />
         )} */}
-        <Footer />
+        <Footer currentPage={currentPage} />
       </div>
     </HelmetProvider>
   );
