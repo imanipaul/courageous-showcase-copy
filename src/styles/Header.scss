@@ -35,6 +35,9 @@ header {
 
   .icons {
     // pointer-events: none;
+
+    display: flex;
+    align-items: center;
     * {
       padding: 0px 12px;
       color: white;
@@ -117,8 +120,9 @@ header {
     }
 
     #courageous {
-      width: 26px;
-      height: 26px;
+      margin-top: 1px;
+      width: 28px;
+      height: 28px;
     }
 
     // #courageous,

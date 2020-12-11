@@ -45,7 +45,7 @@ export const data = [
     brand: "P&G/Secret",
     title: "You Can't Pause Progress",
     description:
-      "Secret is proud to support women who are “all strength, no sweat” – those who boldly fight for progress not only for themselves but for all women, without sweating the obstacles in their path. Secret Deodorant is partnering with Girls Leading Girls to keep young female athletes across America stay physically active and mentally motivated during these difficult times.",
+      "Secret is proud to support women who are “all strength, no sweat”—those who boldly fight for progress not only for themselves but for all women, without sweating the obstacles in their path. Secret Deodorant is partnering with Girls Leading Girls to keep young female athletes across America stay physically active and mentally motivated during these difficult times.",
     quote:
       "It hasn't been easy, and we all face different challenges... but we're taking this time to practice new skills, learning how to lead and to lift each other up.",
   },
@@ -59,7 +59,7 @@ export const data = [
     description:
       "Italian jewelry designer Roberto Coin has spent his life searching for beauty. A self-styled ‘beauty explorer,’ Roberto asserts that the most important experiences of beauty cannot be seen or even touched, they must be felt with the heart. That sentiment imbues every piece of jewelry he creates.",
     quote:
-      "It was a tremendous risk, but I was never afraid... the most beautiful things in life cannot be seen – cannot be touched – they must be felt with your heart.",
+      "It was a tremendous risk, but I was never afraid... the most beautiful things in life cannot be seen—cannot be touched—they must be felt with your heart.",
   },
   {
     theme: "Innovation",
@@ -120,9 +120,9 @@ export const data = [
 
     poster: usaaPoster,
     brand: "USAA",
-    title: "Small Town Heroes - Escondido",
+    title: "Small Town Heroes: Escondido",
     description:
-      "Losing an active duty parent is one of the biggest challenges a military kid can face. That’s why veteran Perry Yee started Active Valor, a program that pairs Gold Star kids with veterans - providing children with mentorship and veterans with a new sense of purpose.",
+      "Losing an active duty parent is one of the biggest challenges a military kid can face. That’s why veteran Perry Yee started Active Valor, a program that pairs Gold Star kids with veterans—providing children with mentorship and veterans with a new sense of purpose.",
     quote:
       "We're from different walks of life, different cultures, different races, different religions, but we have a common bond in our loss... it makes it a lot easier to know that you're not going through it alone.",
   },
