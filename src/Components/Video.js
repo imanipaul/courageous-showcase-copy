@@ -25,7 +25,7 @@ function Video(props) {
     console.log("data", props.data);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [props]);
 
   return (
     <section className="video">
@@ -58,6 +58,7 @@ function Video(props) {
           </button>
         </div>
         <iframe
+          title={`${props.data.video}`}
           ref={videoRef}
           className="player"
           src={`https://player.vimeo.com/video/${props.data.video}?color=b89544&title=0&byline=0&portrait=0`}
@@ -91,7 +92,7 @@ function Video(props) {
         </div>
       </div>
 
-      {props.allData && props.currentPage && (
+      {props.currentPage !== "homepage" && (
         <Links data={props.allData} currentPage={props.currentPage} />
       )}
     </section>

@@ -9,6 +9,7 @@ import { data } from "./data/data";
 
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
+import Links from "./components/Links";
 
 function App() {
   // let dataMutated = data;
@@ -192,20 +193,6 @@ function App() {
       <div className="App">
         <Header setCurrentPage={setCurrentPage} />
         {pickVideoPage()}
-
-        {/* {currentPage === "homepage" ? (
-          <Homepage
-            setCurrentPage={setCurrentPage}
-            shuffled={shuffled}
-            data={data}
-          />
-        ) : (
-          <Video
-            data={data[currentPage]}
-            allData={data}
-            currentPage={currentPage}
-          />
-        )} */}
         <Footer />
       </div>
     </HelmetProvider>
