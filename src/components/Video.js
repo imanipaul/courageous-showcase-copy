@@ -25,17 +25,19 @@ function Video(props) {
     window.addEventListener("resize", handleResize);
     console.log("data", props.data);
 
+    console.log("theme lowercase", props.data.theme.toLowerCase());
+
     return () => window.removeEventListener("resize", handleResize);
   }, [props]);
 
   return (
     <section className="video">
       <MetaDecorator
-        title={`Courageous Showcase | ${props.data.theme}`}
+        title={`${props.data.theme} | Courageous Showcase`}
         description={props.data.description}
         image={props.data.preview}
         video={props.data.loop}
-        url={`${props.url}/${props.data.theme}`}
+        url={`/${props.data.theme.toLowerCase()}`}
       />
       <div className="player-wrapper">
         <div className="overlay">

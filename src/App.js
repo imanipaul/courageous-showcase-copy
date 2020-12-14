@@ -57,7 +57,7 @@ function App() {
     let path = window.location.pathname;
 
     for (let i = 0; i < shuffledData.length; i++) {
-      if (path === `/${shuffledData[i].theme}`) {
+      if (path === `/${shuffledData[i].theme.toLowerCase()}`) {
         console.log("theme is", shuffledData[i].theme);
         return (
           <Video
