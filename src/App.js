@@ -1,5 +1,6 @@
 import "./App.css";
 import { HelmetProvider } from "react-helmet-async";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 import Header from "./components/Header";
 import Video from "./components/Video";
@@ -9,7 +10,6 @@ import { data } from "./data/data";
 
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
-import Links from "./components/Links";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("homepage");
@@ -85,13 +85,41 @@ function App() {
     }
   }
 
+  function pickVideoPage2() {}
+
   return (
     <HelmetProvider>
+      {/* <BrowserRouter> */}
       <div className="App">
         <Header setCurrentPage={setCurrentPage} />
-        {pickVideoPage()}
+        {/* {pickVideoPage()} */}
+
+        <Switch>
+          <Route exact path="/" key={12}>
+            <Homepage
+              setCurrentPage={setCurrentPage}
+              shuffled={shuffled}
+              data={data}
+              shuffledData={shuffledData}
+            />
+          </Route>
+          {shuffledData.map((item, i) => (
+            <Route exact path={`/${item.theme}`} key={i}>
+              <Video
+                url={url}
+                shuffledData={shuffledData}
+                data={shuffledData[i]}
+                allData={data}
+                currentPage={currentPage}
+                value={i}
+                setCurrentPage={setCurrentPage}
+              />
+            </Route>
+          ))}
+        </Switch>
         <Footer currentPage={currentPage} />
       </div>
+      {/* </BrowserRouter> */}
     </HelmetProvider>
   );
 }

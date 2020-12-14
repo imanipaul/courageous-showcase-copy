@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 // import { hydrate, render } from "react-dom";
 
@@ -8,9 +9,19 @@ import App from "./App";
 const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
-  ReactDOM.hydrate(<App />, rootElement);
+  ReactDOM.hydrate(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    rootElement
+  );
 } else {
-  ReactDOM.render(<App />, rootElement);
+  ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    rootElement
+  );
 }
 
 // If you want to start measuring performance in your app, pass a function
