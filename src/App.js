@@ -85,6 +85,8 @@ function App() {
     }
   }
 
+  function pickVideoPage2() {}
+
   return (
     <div className="App">
       <Header setCurrentPage={setCurrentPage} />

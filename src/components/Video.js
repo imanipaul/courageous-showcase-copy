@@ -32,13 +32,22 @@ function Video(props) {
 
   return (
     <section className="video">
-      <MetaDecorator
+      {/* <MetaDecorator
         title={`${props.data.theme} | Courageous Showcase`}
         description={props.data.description}
         image={props.data.preview}
         video={props.data.loop}
         url={`/${props.data.theme.toLowerCase()}`}
-      />
+      /> */}
+      <Helmet>
+        <title>{props.data.title}</title>
+        <meta name="description" content={props.data.description} />
+        <meta property="og:title" content={props.data.title} />
+        <meta property="og:description" content={props.data.description} />
+        <meta property="og:image" content={props.data.image} />
+        <meta property="og:url" content={props.url} />
+        {props.video && <meta property="og:video" content={props.video} />}
+      </Helmet>
       <div className="player-wrapper">
         <div className="overlay">
           <video

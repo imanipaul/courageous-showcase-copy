@@ -6,7 +6,7 @@ import MetaDecorator from "./MetaDecorator";
 export default function Homepage(props) {
   return (
     <section className="homepage">
-      <MetaDecorator
+      {/* <MetaDecorator
         title="Courageous Showcase"
         description="Time and again, 2020 has challenged us to be more agile in our
         approach to telling brands' stories, prioritizing safety without
@@ -15,7 +15,7 @@ export default function Homepage(props) {
         Studios. We're proud to share each and every one with you as we fix
         our gaze on the horizon, to the year that lies ahead."
         image={preview}
-      />
+      /> */}
       <div className="header">
         <h1>2020 in film</h1>
         <p>
