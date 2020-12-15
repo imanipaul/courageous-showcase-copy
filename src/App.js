@@ -88,34 +88,39 @@ function App() {
   function pickVideoPage2() {}
 
   return (
-    <div className="App">
-      <Header setCurrentPage={setCurrentPage} />
+    <HelmetProvider>
+      {/* <BrowserRouter> */}
+      <div className="App">
+        <Header setCurrentPage={setCurrentPage} />
+        {/* {pickVideoPage()} */}
 
-      <Switch>
-        <Route exact path="/" key={12}>
-          <Homepage
-            setCurrentPage={setCurrentPage}
-            shuffled={shuffled}
-            data={data}
-            shuffledData={shuffledData}
-          />
-        </Route>
-        {shuffledData.map((item, i) => (
-          <Route exact path={`/${item.theme}`} key={i}>
-            <Video
-              url={url}
-              shuffledData={shuffledData}
-              data={shuffledData[i]}
-              allData={data}
-              currentPage={currentPage}
-              value={i}
+        <Switch>
+          <Route exact path="/" key={12}>
+            <Homepage
               setCurrentPage={setCurrentPage}
+              shuffled={shuffled}
+              data={data}
+              shuffledData={shuffledData}
             />
           </Route>
-        ))}
-      </Switch>
-      <Footer currentPage={currentPage} />
-    </div>
+          {shuffledData.map((item, i) => (
+            <Route exact path={`/${item.theme}`} key={i}>
+              <Video
+                url={url}
+                shuffledData={shuffledData}
+                data={shuffledData[i]}
+                allData={data}
+                currentPage={currentPage}
+                value={i}
+                setCurrentPage={setCurrentPage}
+              />
+            </Route>
+          ))}
+        </Switch>
+        <Footer currentPage={currentPage} />
+      </div>
+      {/* </BrowserRouter> */}
+    </HelmetProvider>
   );
 }
 

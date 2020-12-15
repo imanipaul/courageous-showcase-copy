@@ -14,7 +14,7 @@
     }
 
     h1 {
-      font-family: "Trade Gothic Bold Condensed";
+      font-family: "Trade Gothic Bold Condensed", sans-serif;
       font-size: 180px;
       color: white;
       letter-spacing: -6.71px;
@@ -44,7 +44,7 @@
     }
 
     p {
-      font-family: "Lato Light";
+      font-family: "Lato Light", sans-serif;
       font-size: 18px;
       color: white;
       letter-spacing: 0.4px;
@@ -357,7 +357,7 @@
 
           .title {
             text-align: left;
-            font-family: "Lato Regular";
+            font-family: "Lato Regular", sans-serif;
 
             @media screen and (max-width: $tablet) {
               max-width: 60vw;
@@ -365,7 +365,7 @@
           }
 
           .brand {
-            font-family: "Lato Light";
+            font-family: "Lato Light", sans-serif;
             text-transform: uppercase;
             text-align: right;
             color: #bebebe;
