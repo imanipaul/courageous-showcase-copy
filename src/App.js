@@ -90,7 +90,7 @@ function App() {
     <div className="App">
       <Header setCurrentPage={setCurrentPage} />
       <Switch>
-        <Route exact path="/" key={12}>
+        <Route exact path="/courageous-showcase-copy" key={12}>
           <Homepage
             setCurrentPage={setCurrentPage}
             shuffled={shuffled}
