@@ -7,7 +7,7 @@ import Homepage from "./components/Homepage";
 
 import { data } from "./data/data";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Footer from "./components/Footer";
 
 function App() {
@@ -22,7 +22,6 @@ function App() {
   let url = "localhost:3000";
 
   let dataMutated = JSON.parse(JSON.stringify(data));
-  console.log("");
 
   // useEffect(() => {
 
