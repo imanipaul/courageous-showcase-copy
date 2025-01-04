@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet";
-import MetaDecorator from "./MetaDecorator";
 import Vimeo from "@vimeo/player";
 import Links from "./Links";
 import quote from "../assets/images/QUOTE.svg";
@@ -15,7 +13,6 @@ function Video(props) {
   const videoRef = useRef(null);
 
   function handleResize() {
-    console.log("resizing!");
     setButtonPlacement(window.innerWidth > 648 ? "desktop" : "mobile");
   }
 
@@ -23,31 +20,13 @@ function Video(props) {
     props.setCurrentPage(props.value);
 
     window.addEventListener("resize", handleResize);
-    console.log("data", props.data);
-
-    console.log("theme lowercase", props.data.theme.toLowerCase());
 
     return () => window.removeEventListener("resize", handleResize);
   }, [props]);
 
   return (
     <section className="video">
-      <MetaDecorator
-        title={`${props.data.theme} | Courageous Showcase`}
-        description={props.data.description}
-        image={props.data.preview}
-        video={props.data.loop}
-        url={`/${props.data.theme.toLowerCase()}`}
-      />
-      {/* <Helmet>
-        <title>{props.data.title}</title>
-        <meta name="description" content={props.data.description} />
-        <meta property="og:title" content={props.data.title} />
-        <meta property="og:description" content={props.data.description} />
-        <meta property="og:image" content={props.data.image} />
-        <meta property="og:url" content={props.url} />
-        {props.video && <meta property="og:video" content={props.video} />}
-      </Helmet> */}
+ 
       <div className="player-wrapper">
         <div className="overlay">
           <video

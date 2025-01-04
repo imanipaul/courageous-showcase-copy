@@ -1,4 +1,3 @@
-import { slide as Menu } from "react-burger-menu";
 import "../styles/HamburgerMenu.scss";
 import close from "../assets/images/Close.svg";
 import arrow from "../assets/images/RIGHT-ARROW.svg";

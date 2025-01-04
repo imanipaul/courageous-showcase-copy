@@ -5,36 +5,36 @@ import { ReactComponent as Linkedin } from "../assets/images/LINKEDIN.svg";
 import { ReactComponent as Vimeo } from "../assets/images/VIMEO.svg";
 import hamburger from "../assets/images/HAMBURGER.svg";
 import HamburgerMenu from "./HamburgerMenu";
-import { useEffect, useRef, useState } from "react";
+import {  useRef, useState } from "react";
 
-export default function Header(props) {
+export default function Header() {
   const [burgerVisible, setBurgerVisible] = useState(false);
   const courageousIconRef = useRef(null);
   const vimeoIconRef = useRef(null);
   const linkedinIconRef = useRef(null);
   const instaIconRef = useRef(null);
 
-  function handleHover(currentRef) {
-    // currentRef.current.classList.remove("hover");
-    currentRef.current.classList.add("hover");
+  // function handleHover(currentRef) {
+  //   // currentRef.current.classList.remove("hover");
+  //   currentRef.current.classList.add("hover");
 
-    currentRef !== courageousIconRef &&
-      courageousIconRef.current.classList.add("inactive");
-    currentRef !== vimeoIconRef &&
-      vimeoIconRef.current.classList.add("inactive");
-    currentRef !== linkedinIconRef &&
-      linkedinIconRef.current.classList.add("inactive");
-    currentRef !== instaIconRef &&
-      instaIconRef.current.classList.add("inactive");
-  }
+  //   currentRef !== courageousIconRef &&
+  //     courageousIconRef.current.classList.add("inactive");
+  //   currentRef !== vimeoIconRef &&
+  //     vimeoIconRef.current.classList.add("inactive");
+  //   currentRef !== linkedinIconRef &&
+  //     linkedinIconRef.current.classList.add("inactive");
+  //   currentRef !== instaIconRef &&
+  //     instaIconRef.current.classList.add("inactive");
+  // }
 
-  function removeHover(currentRef) {
-    currentRef.current.classList.remove = "hover";
-    courageousIconRef.current.classList.remove = "inactive";
-    linkedinIconRef.current.classList.remove = "inactive";
-    instaIconRef.current.classList.remove = "inactive";
-    vimeoIconRef.current.classList.remove = "inactive";
-  }
+  // function removeHover(currentRef) {
+  //   currentRef.current.classList.remove = "hover";
+  //   courageousIconRef.current.classList.remove = "inactive";
+  //   linkedinIconRef.current.classList.remove = "inactive";
+  //   instaIconRef.current.classList.remove = "inactive";
+  //   vimeoIconRef.current.classList.remove = "inactive";
+  // }
 
   // useEffect(() => {
   //   // console.log(courageousIconRef);
@@ -63,7 +63,6 @@ export default function Header(props) {
             fill="#ffffff"
             stroke="#ffffff"
             id="courageous"
-            // className=""
             ref={courageousIconRef}
           />
         </a>
@@ -86,7 +85,6 @@ export default function Header(props) {
           target="_blank"
           className="desktop"
           id="linkedin-container"
-          target="_blank"
           rel="noreferrer"
         >
           <Linkedin
