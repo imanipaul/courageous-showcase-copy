@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/courageous-showcase-copy/static/css/main.ae2e6a69.css",
-    "main.js": "/courageous-showcase-copy/static/js/main.6af5d38a.js",
+    "main.js": "/courageous-showcase-copy/static/js/main.5e5b8daf.js",
     "static/media/2020-12-07-COU-VALUES-JOHN-HANCOCK.mp4": "/courageous-showcase-copy/static/media/2020-12-07-COU-VALUES-JOHN-HANCOCK.9d519cca8896d84cb7bf.mp4",
     "static/media/2020-12-07-COU-VALUES-CHARLES-SCHWAB.mp4": "/courageous-showcase-copy/static/media/2020-12-07-COU-VALUES-CHARLES-SCHWAB.e8376c422629bf35749d.mp4",
     "static/media/2020-12-07-COU-VALUES-ROBERTO.mp4": "/courageous-showcase-copy/static/media/2020-12-07-COU-VALUES-ROBERTO.ff578acb1d4da5f532c7.mp4",
@@ -54,10 +54,10 @@
     "static/media/HAMBURGER.svg": "/courageous-showcase-copy/static/media/HAMBURGER.a41fa47f98c056a9892dee0fd22de82a.svg",
     "index.html": "/courageous-showcase-copy/index.html",
     "main.ae2e6a69.css.map": "/courageous-showcase-copy/static/css/main.ae2e6a69.css.map",
-    "main.6af5d38a.js.map": "/courageous-showcase-copy/static/js/main.6af5d38a.js.map"
+    "main.5e5b8daf.js.map": "/courageous-showcase-copy/static/js/main.5e5b8daf.js.map"
   },
   "entrypoints": [
     "static/css/main.ae2e6a69.css",
-    "static/js/main.6af5d38a.js"
+    "static/js/main.5e5b8daf.js"
   ]
 }
