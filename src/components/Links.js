@@ -1,9 +1,9 @@
 import "../styles/Links.scss";
+import { Link } from "react-router-dom";
 import previousIcon from "../assets/images/LEFT-ARROW.svg";
 import nextIcon from "../assets/images/RIGHT-ARROW.svg";
-import { Link } from "react-router-dom";
 
-export default function Links2({ currentPage, data, shuffledData }) {
+export default function Links2({ currentPage, shuffledData }) {
   console.log("currentpage", currentPage);
 
   const prevReferencePoint =

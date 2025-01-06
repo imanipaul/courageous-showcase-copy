@@ -2,13 +2,11 @@ import "../styles/HamburgerMenu.scss";
 import close from "../assets/images/Close.svg";
 import arrow from "../assets/images/RIGHT-ARROW.svg";
 
-export default function HamburgerMenu(props) {
+export default function HamburgerMenu({ visible, setVisible }) {
   return (
-    <section
-      className={`burger-menu-container ${props.visible ? "show" : "hidden"}`}
-    >
+    <section className={`burger-menu-container ${visible ? "show" : "hidden"}`}>
       <nav>
-        <img src={close} alt="close" onClick={() => props.setVisible(false)} />
+        <img src={close} alt="close" onClick={() => setVisible(false)} />
         <a
           href="https://www.courageousstudios.com"
           target="_blank"

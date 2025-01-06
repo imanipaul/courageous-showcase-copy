@@ -1,7 +1,7 @@
 import "../styles/Homepage.scss";
 import { Link } from "react-router-dom";
 
-export default function Homepage(props) {
+export default function Homepage({ shuffled, shuffledData, setCurrentPage }) {
   return (
     <section className="homepage">
       <div className="header">
@@ -17,8 +17,8 @@ export default function Homepage(props) {
       </div>
       <div className="grid-container">
         <div className="value-grid">
-          {props.shuffled &&
-            props.shuffledData.map((item, index) => {
+          {shuffled &&
+            shuffledData.map((item, index) => {
               return (
                 <div
                   className={`square s${index + 1}`}
@@ -26,7 +26,7 @@ export default function Homepage(props) {
                   key={index}
                   onClick={(e) => {
                     e.preventDefault();
-                    props.setCurrentPage(index);
+                    setCurrentPage(index);
                   }}
                 >
                   <Link to={`/${item.theme}`}>

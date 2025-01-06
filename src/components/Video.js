@@ -4,7 +4,14 @@ import Links from "./Links";
 import quote from "../assets/images/QUOTE.svg";
 import "../styles/Video.scss";
 
-function Video(props) {
+function Video({
+  setCurrentPage,
+  value,
+  data,
+  currentPage,
+  allData,
+  shuffledData,
+}) {
   const [buttonPlacement, setButtonPlacement] = useState(
     window.innerWidth > 648 ? "desktop" : "mobile"
   );
@@ -17,12 +24,12 @@ function Video(props) {
   }
 
   useEffect(() => {
-    props.setCurrentPage(props.value);
+    setCurrentPage(value);
 
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, [props]);
+  }, []);
 
   return (
     <section className="video">
@@ -30,8 +37,8 @@ function Video(props) {
         <div className="overlay">
           <video
             ref={loopRef}
-            src={props.data.loop}
-            poster={props.data.poster}
+            src={data.loop}
+            poster={data.poster}
             autoPlay
             muted
             loop
@@ -51,10 +58,10 @@ function Video(props) {
           </button>
         </div>
         <iframe
-          title={`${props.data.video}`}
+          title={`${data.video}`}
           ref={videoRef}
           className="player"
-          src={`https://player.vimeo.com/video/${props.data.video}?color=b89544&title=0&byline=0&portrait=0`}
+          src={`https://player.vimeo.com/video/${data.video}?color=b89544&title=0&byline=0&portrait=0`}
           width="100%"
           height="100%"
           allow="autoplay; fullscreen"
@@ -63,16 +70,16 @@ function Video(props) {
       </div>
       <div className="content">
         <div className="info">
-          <p className="brand">{props.data.brand}</p>
+          <p className="brand">{data.brand}</p>
           <div className="descriptions">
             <div className="title-container">
-              <div className="title">{props.data.title}</div>
+              <div className="title">{data.title}</div>
 
               {buttonPlacement === "desktop" && (
                 <button>Share {window.innerWidth < 361 ? "Video" : ""}</button>
               )}
             </div>
-            <div className="right">{props.data.description}</div>
+            <div className="right">{data.description}</div>
           </div>
 
           {buttonPlacement === "mobile" && (
@@ -81,16 +88,16 @@ function Video(props) {
         </div>
         <div className="quote">
           <img src={quote} alt="quote marks" />
-          <p>{props.data.quote}</p>
+          <p>{data.quote}</p>
         </div>
       </div>
 
-      {props.currentPage !== "homepage" && (
+      {currentPage !== "homepage" && (
         <>
           <Links
-            data={props.allData}
-            currentPage={props.currentPage}
-            shuffledData={props.shuffledData}
+            data={allData}
+            currentPage={currentPage}
+            shuffledData={shuffledData}
           />
         </>
       )}
