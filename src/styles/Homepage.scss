@@ -22,19 +22,11 @@
       margin: 0px;
       padding: 0px;
 
-      // @media screen and (max-width: 1440px) {
-      //   font-size: 180px;
-      //   letter-spacing: -9.71px;
-      //   line-height: 146.26px;
-      // }
       @media screen and (max-width: $tablet) {
-        // font-size: 160px;
         letter-spacing: -8.63px;
-        // line-height: 21vw;
         font-size: 21vw;
         text-align: left;
         margin-left: 16px;
-        // letter-spacing: 0.0vw;
       }
       @media screen and (max-width: 425px) {
         font-size: 18vw;
@@ -49,23 +41,15 @@
       color: white;
       letter-spacing: 0.4px;
       line-height: 24px;
-      // max-width: 718px;
       width: 1116px;
       padding: 0px;
       margin: 0px;
       margin-bottom: 64px;
       margin-top: -30px;
-      // margin-left: auto;
       text-align: center;
 
-      // @media screen and (max-width: 1439px) {
-
-      // }
-
       @media screen and (max-width: $homepage-title-break) {
-        // margin: 0px;
         max-width: none;
-        // width: 95%;
         margin-bottom: 40px;
       }
 
@@ -125,6 +109,11 @@
         & > * {
           pointer-events: auto;
         }
+
+        a {
+          text-decoration: none;
+        }
+
         video {
           width: 100%;
         }
@@ -136,7 +125,6 @@
           left: 0;
           opacity: 0%;
           transition: opacity 0.3s ease;
-          // height: 100%;
         }
         &:hover {
           img {
@@ -149,7 +137,6 @@
           grid-row: 1 / span 2;
           margin-right: 16px;
           @media screen and (max-width: $homepage-laptop) {
-            // grid-column: 1 /span 2;
             margin: 0px;
           }
           @media screen and (max-width: $tablet) {
@@ -182,8 +169,6 @@
             grid-column: 1;
             grid-row: 3;
           }
-
-          //   margin-bottom: 20px;
         }
 
         &.s4 {
@@ -197,14 +182,11 @@
             grid-column: 1;
             grid-row: 4;
           }
-
-          //   margin-top: 20px;
         }
         &.s5 {
           grid-column: 2 / span 2;
           grid-row: 3 / span 2;
           margin-left: 16px;
-          //   margin-top: 20px;
           @media screen and (max-width: $homepage-laptop) {
             grid-column: 2;
             grid-row: 4;
@@ -320,9 +302,6 @@
         &.s11,
         &.s12 {
           video {
-            // max-width: 568px;
-            // width: 31vw;
-
             @media screen and (max-width: $homepage-laptop) {
               width: 100%;
               max-width: none;
@@ -338,6 +317,7 @@
           justify-content: space-between;
 
           p {
+            text-decoration: none;
             margin: 0px;
             margin-top: 8px;
           }

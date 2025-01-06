@@ -26,7 +26,6 @@ function Video(props) {
 
   return (
     <section className="video">
- 
       <div className="player-wrapper">
         <div className="overlay">
           <video
@@ -87,11 +86,13 @@ function Video(props) {
       </div>
 
       {props.currentPage !== "homepage" && (
-        <Links
-          data={props.allData}
-          currentPage={props.currentPage}
-          shuffledData={props.shuffledData}
-        />
+        <>
+          <Links
+            data={props.allData}
+            currentPage={props.currentPage}
+            shuffledData={props.shuffledData}
+          />
+        </>
       )}
     </section>
   );

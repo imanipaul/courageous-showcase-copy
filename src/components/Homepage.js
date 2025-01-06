@@ -1,5 +1,5 @@
-
 import "../styles/Homepage.scss";
+import { Link } from "react-router-dom";
 
 export default function Homepage(props) {
   return (
@@ -27,23 +27,24 @@ export default function Homepage(props) {
                   onClick={(e) => {
                     e.preventDefault();
                     props.setCurrentPage(index);
-                    window.location = `/${item.theme.toLowerCase()}`;
                   }}
                 >
-                  <img src={item.poster} alt="poster" />
-                  <video
-                    src={item.loop}
-                    poster={item.poster}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  />
+                  <Link to={`/${item.theme}`}>
+                    <img src={item.poster} alt="poster" />
+                    <video
+                      src={item.loop}
+                      poster={item.poster}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
 
-                  <div className="video-info">
-                    <p className="title">{item.title}</p>
-                    <p className="brand">{item.brand}</p>
-                  </div>
+                    <div className="video-info">
+                      <p className="title">{item.title}</p>
+                      <p className="brand">{item.brand}</p>
+                    </div>
+                  </Link>
                 </div>
               );
             })}

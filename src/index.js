@@ -1,25 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./index.css";
-// import { hydrate, render } from "react-dom";
 
 import App from "./App";
+import ScrollToTop from "./components/ScrollToTop";
 
 const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
   ReactDOM.hydrate(
-    <BrowserRouter>
+    <HashRouter basename="/">
+      <ScrollToTop />
       <App />
-    </BrowserRouter>,
+    </HashRouter>,
     rootElement
   );
 } else {
   ReactDOM.render(
-    <BrowserRouter>
+    <HashRouter basename="/">
+      <ScrollToTop />
       <App />
-    </BrowserRouter>,
+    </HashRouter>,
     rootElement
   );
 }

@@ -24,6 +24,11 @@ header {
     transition: color 0.1s ease;
     align-self: flex-end; //to account for baseline offset of font
 
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
     &:hover {
       color: rgba(255, 255, 255, 0.6);
     }

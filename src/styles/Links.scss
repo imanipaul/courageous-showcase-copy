@@ -14,7 +14,6 @@
     max-width: none;
   }
   .button-container {
-    // margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,9 +24,14 @@
       align-items: flex-start;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     button {
       border: none;
       background-color: black;
+      cursor: pointer;
       color: white;
       display: flex;
       flex-direction: row;
@@ -36,7 +40,6 @@
       @media screen and (max-width: $video-mobile-max) {
         flex-direction: column;
       }
-
       * {
         margin: 0px;
       }

@@ -1,117 +1,54 @@
 import "../styles/Links.scss";
 import previousIcon from "../assets/images/LEFT-ARROW.svg";
 import nextIcon from "../assets/images/RIGHT-ARROW.svg";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-export default function Links(props) {
-  useEffect(() => {
-    console.log("~~Links currentPage", props.currentPage);
-    console.log("~~Links shuffled Data", props.shuffledData);
-    console.log(
-      "~~Links shuffled data at current page",
-      props.shuffledData[props.currentPage]
-    );
-  });
+export default function Links2({ currentPage, data, shuffledData }) {
+  console.log("currentpage", currentPage);
+
+  const prevReferencePoint =
+    currentPage === 0 ? shuffledData.length : currentPage;
+
+  const nextReferencePoint = currentPage === 11 ? 0 : currentPage + 1;
 
   return (
     <section className="links">
       <div className="button-container">
-        {props.currentPage === 0 ? (
+        <Link to={`/${shuffledData[prevReferencePoint - 1].theme}`}>
           <button
             className="previous"
             style={{
-              marginRight:
-                props.currentPage === props.shuffledData.length && "auto",
+              marginRight: currentPage === shuffledData.length && "auto",
             }}
-            onClick={() =>
-              (window.location = `/${
-                props.shuffledData[props.shuffledData.length - 1].theme
-              }`)
-            }
-          >
-            <img src={previousIcon} alt="previous" />
-            {props.shuffledData && (
-              <div className="button-content">
-                <p className="theme">
-                  {props.shuffledData[props.shuffledData.length - 1].theme}
-                </p>
-                <p className="title">
-                  {props.shuffledData[props.shuffledData.length - 1].title}
-                </p>
-                <p className="brand">
-                  {props.shuffledData[props.shuffledData.length - 1].brand}
-                </p>
-              </div>
-            )}
-          </button>
-        ) : (
-          <button
-            className="previous"
-            style={{
-              marginRight:
-                props.currentPage === props.shuffledData.length && "auto",
-            }}
-            onClick={() =>
-              (window.location = `/${
-                props.shuffledData[props.currentPage - 1].theme
-              }`)
-            }
           >
             <img src={previousIcon} alt="previous" />
             <div className="button-content">
               <p className="theme">
-                {props.shuffledData[props.currentPage - 1].theme}
+                {shuffledData[prevReferencePoint - 1].theme}
               </p>
               <p className="title">
-                {props.shuffledData[props.currentPage - 1].title}
+                {shuffledData[prevReferencePoint - 1].title}
               </p>
               <p className="brand">
-                {props.shuffledData[props.currentPage - 1].brand}
+                {shuffledData[prevReferencePoint - 1].brand}
               </p>
             </div>
           </button>
-        )}
-        {/* {console.log("~~~length", props.shuffledData.length)} */}
+        </Link>
 
-        {props.currentPage === 11 ? (
+        <Link to={`/${shuffledData[nextReferencePoint].theme}`}>
           <button
             className="next"
-            style={{ marginLeft: props.currentPage === 0 && "auto" }}
-            onClick={() =>
-              (window.location = `/${props.shuffledData[0].theme}`)
-            }
+            style={{ marginLeft: currentPage === 0 && "auto" }}
           >
             <div className="button-content">
-              <p className="theme">{props.shuffledData[0].theme}</p>
-              <p className="title">{props.shuffledData[0].title}</p>
-              <p className="brand">{props.shuffledData[0].brand}</p>
+              <p className="theme">{shuffledData[nextReferencePoint].theme}</p>
+              <p className="title">{shuffledData[nextReferencePoint].title}</p>
+              <p className="brand">{shuffledData[nextReferencePoint].brand}</p>
             </div>
             <img src={nextIcon} alt="previous" />
           </button>
-        ) : (
-          <button
-            className="next"
-            style={{ marginLeft: props.currentPage === 0 && "auto" }}
-            onClick={() =>
-              (window.location = `/${
-                props.shuffledData[props.currentPage + 1].theme
-              }`)
-            }
-          >
-            <div className="button-content">
-              <p className="theme">
-                {props.shuffledData[props.currentPage + 1].theme}
-              </p>
-              <p className="title">
-                {props.shuffledData[props.currentPage + 1].title}
-              </p>
-              <p className="brand">
-                {props.shuffledData[props.currentPage + 1].brand}
-              </p>
-            </div>
-            <img src={nextIcon} alt="previous" />
-          </button>
-        )}
+        </Link>
       </div>
     </section>
   );
